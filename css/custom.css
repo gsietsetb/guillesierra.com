@@ -1,6 +1,7 @@
 .timeline {
     position: relative;
     padding:4px 0 0 0;
+    margin-top:22px;
     list-style: none;
 }
 
@@ -55,19 +56,19 @@
 .timeline>li .timeline-image {
     z-index: 100;
     position: absolute;
-    left: 0%;
+    left: 50%;
     border: 7px solid #3b5998;
     border-radius: 100%;
     background-color: #3b5998;
     box-shadow: 0 0 5px #4582ec;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     margin-left: -100px;
 }
 
 .timeline>li .timeline-image h4 {
-  /*  margin-top: 12px;*/
-  font-size: 10px;
+   margin-top: 12px;
+  font-size: 12px;
   line-height: 14px;
 }
 
