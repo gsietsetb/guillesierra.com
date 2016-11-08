@@ -4,6 +4,7 @@
 	<title>Guillermo Sierra Portfolio</title>
 	<meta charset="utf-8" />
 	<link rel="shortcut icon" href="img/Sierra.png">
+
 	<meta property="og:title" content="Guillermo Sierra" />
 	<meta property="og:image" content="img/Sierra.png"/>
 	<meta property="og:description" content="Web Portfolio" />
@@ -12,6 +13,10 @@
 	<meta name="description" content="Guillermo Sierra, Telecommunication Engineer">
 	<meta name="author" content="Guillermo Sierra">
 	<meta name="keywords" content="Sierra,Aiello,Guillermo,UPC,EPFL,dustOfThings,phood,MIT,google,facebook">
+
+	<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+	<script type="text/javascript" src="https:http://cdn.amcharts.com/lib/3/radar.js"></script>
+	<script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/dark.js"></script>
 	<!--[if lte IE 8]>
 	<script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -27,73 +32,78 @@
 	<div class="inner">
 		<nav>
 			<ul>
-				<li><a href="#intro" >
-					<img src="img/Sierra-circle.png" width="30" height="30" alt="Sierra">
-					Guillermo Sierra
+				<li style="display: inline-block"><a href="#intro">
+					<p style="display: inline;">Guillermo Sierra</p>
+					<span><img src="img/Sierra-circle.png" width="30" height="30" alt="Sierra"></span>
 				</a></li>
 				<li><a href="#matchyang">
-					<img src="img/fishYang.png" width="30" height="30" alt="matchyang">
-					MatchYang
+					<p style="display: inline;">MatchYang</p>
+					<span><img src="img/fishYang.png" width="30" height="30" alt="matchyang"></span>
 				</a></li>
 				<li><a href="#Amadeus">
-					<img src="img/amadeus.png" width="30" height="30" alt="Amadeus">
-					Amadeus
+					<p style="display: inline;">Amadeus</p>
+					<span><img src="img/amadeus.png" width="30" height="30" alt="Amadeus"></span>
 				</a></li>
 				<li><a href="#Seat">
-					<img src="img/icon-Seat.png" width="30" height="30" alt="Seat">
-					Seat
+					<p style="display: inline;">Seat</p>
+					<span><img src="img/icon-Seat.png" width="30" height="30" alt="Seat"></span>
 				</a></li>
 				<li><a href="#MWC">
-					<img src="img/gsma.png" width="30" height="30" alt="Seat">
-					MWC 2016
+					<p style="display: inline;">MWC 2016</p>
+					<span><img src="img/gsma.png" width="30" height="30" alt="Seat"></span>
 				</a></li>
-
 				<li><a href="#EWSN">
-					<img src="http://sites.tech.uh.edu/isgrin/files/2013/11/tmote-sky-blue.gif" width="30" height="30" alt="EWSN">
-					EWSN 2016
+					<p style="display: inline;">EWSN 2016</p>
+					<span><img src="img/telosB.gif" width="30" height="30" alt="EWSN"></span>
 				</a></li>
 				<li><a href="#Intel">
-					<img src="img/intel.png" width="30" height="30" alt="Intel">
-					Intel Edison 2015
+					<p style="display: inline;">Intel Edison 2015</p>
+					<span><img src="img/intel.png" width="30" height="30" alt="Intel"></span>
 				</a></li>
 				<li><a href="#EPFL">
-					<img src="https://pbs.twimg.com/profile_images/732948623877636096/vDs3q7fc_normal.jpg" width="30" height="30" alt="EPFL">
-					EPFL
+					<p style="display: inline;">EPFL</p>
+					<span><img src="img/epfl2.jpg" width="30" height="30" alt="EPFL"></span>
 				</a></li>
 				<li><a href="#HackEPFL">
-					<img src="img/facebook.png" width="30" height="30" alt="Facebook">
-					Facebook HackEPFL
+					<p style="display: inline;">Facebook HackEPFL</p>
+					<span><img src="img/facebook.png" width="30" height="30" alt="Facebook"></span>
 				</a></li>
 				<li><a href="#ThinkBig">
-					<img src="img/telefonica.png" width="30" height="30" alt="Telefonica">
-					ThinkBig Telefonica
+					<p style="display: inline;">ThinkBig Telefonica</p>
+					<span><img src="img/telefonica.png" width="30" height="30" alt="Telefonica"></span>
 				</a></li>
 				<li><a href="#ThirdEye">
-					<img src="img/hal.png" width="30" height="30" alt="ThirdEye">
-					ThirdEye Android App
+					<p style="display: inline;">ThirdEye</p>
+					<span><img src="img/hal.png" width="30" height="30" alt="ThirdEye"></span>
 				</a></li>
 				<li><a href="#CubeSat">
-					<img src="img/google.png" width="30" height="30" alt="Google">
-					CubeSat Google
+					<p style="display: inline;">CubeSat Google</p>
+					<span><img src="img/google.png" width="30" height="30" alt="Google"></span>
 				</a></li>
 				<li><a href="#MIT">
-					<img src="img/mit.png" width="30" height="30" alt="Mit">
-					SeaPerch MIT robot
+					<p style="display: inline;">SeaPerch MIT robot</p>
+					<span><img src="img/mit.png" width="30" height="30" alt="Mit"></span>
 				</a></li>
 				<li><a href="#UPC">
-					<img src="img/icon-UPC.gif" width="30" height="30" alt="Upc">
-					UPC
+					<p style="display: inline;">UPC</p>
+					<span><img src="img/icon-UPC.gif" width="30" height="30" alt="Upc"></span>
 				</a></li>
 				<li><a href="#RoboSumo">
-					<img src="img/sumo.png" width="30" height="30" alt="Sumo">
-					RoboSumo UPC
+					<p style="display: inline;">RoboSumo UPC</p>
+					<span><img src="img/sumo.png" width="30" height="30" alt="Sumo"></span>
 				</a></li>
 				<li><a href="#map">
-					Contact
+					<p style="display: inline;">Curr. Location</p>
+					<span><img src="img/gmaps.png" width="30" height="30" alt="Sumo"></span>
+				</a></li>
+				<li><a href="#contact">
+					<p style="display: inline;">Contact</p>
+					<span><img src="img/gmail.png" width="30" height="30" alt="Sumo"></span>
 				</a></li>
 			</ul>
 		</nav>
 	</div>
+
 </section>
 
 <!-- Wrapper -->
@@ -103,12 +113,51 @@
 	<section id="intro" class="wrapper style1 fullscreen fade-up">
 		<div class="inner">
 			<h1>&Gopf;uillermo &Sopf;ierra &Aopf;iello</h1>
-			<p><b>Telecommunication Engineer</b></p><br><br><br>
-			<br><br><br>
-			<ul class="actions" style="position: fixed">
-				<li ><a href="#matchyang" class="button scrolly">Guess my current location trying to identify the Skyline...</a></li>
-			</ul>
-
+			<table style="text-align: center; border: 0; background-color: transparent !important; width: auto; margin-right: 10%; text-align: center; padding: 0">
+				<tr>
+					<td style="background-color: transparent">
+						&nbsp &nbsp <a href="#UPC" class="button scrolly">Telecom. Engineer</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="img/plus2.png" style="width: 40px; height: 40px">
+					</td>
+				</tr>
+				<tr>
+					<td style="background-color: transparent">
+						&nbsp &nbsp &nbsp <a href="#map" class="button scrolly">Passionate traveller</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="img/equal.png" style="width: 50px; height: 50px">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						&nbsp &nbsp &nbsp &nbsp <a href="#map" class="button scrolly" style="color: darkorange"><img
+							src="img/nomad.png" width="30" height="30" alt="nomad">
+						Digital Nomad</a>
+					</td>
+				</tr>
+			</table>
+			<table style="color: whitesmoke; position: absolute; right: 5%; border-collapse: collapse; border: 0; width: auto; padding: 0">
+				<tr>
+					<td style="text-align: left; padding:0; margin:0;">
+						Scroll down to dig into:
+						<li><a href="#EPFL" style="color: #3e4094; font-weight: bold"> Studies</a></li>
+						<li><a href="#Amadeus" style="color: #993300; font-weight: bold"> Work experience</a></li>
+						<li><a href="#matchyang" style="color: #348cb2; font-weight: bold"> Personal Projects, and
+							attended challenges Hackathons</a></li>
+					</td>
+				</tr>
+				<tr style="padding:0; margin:0;">
+					<td style="padding:0; margin:0; color: whitesmoke">
+						Guess my current <a href="#map">location</a> trying to identify the Skyline...</p>
+					</td>
+				</tr>
+			</table>
 		</div>
 	</section>
 
@@ -265,8 +314,6 @@
 			</div>
 		</section>
 
-
-
 		<!-- Hackathon EPFL -->
 		<section id="HackEPFL" >
 			<a href="#" class="image"><img src="http://drmcapitolgroup.com/wp-content/uploads/2013/11/Hackathon.jpg" alt="" data-position="center center" /></a>
@@ -289,9 +336,11 @@
 			<a href="#" class="image"><img src="http://www.upc.edu/gestioestudis/files/fotos_unitats/109_2.jpg" alt="" data-position="center center" /></a>
 			<div class="content">
 				<div class="inner">
-						<h2 class="button" >
-							<a href="http://upc.com"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Logo_UPC.svg/2000px-Logo_UPC.svg.png" width="30" height="30" alt="SEAT">
-								<b>UPC - Telecommunication Engineering Degree </b></a>
+					<h2 class="button">
+						<a href="http://upc.com"> <img
+								src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Logo_UPC.svg/2000px-Logo_UPC.svg.png"
+								width="30" height="30" alt="SEAT">
+							<b>UPC - Telecommunication Engineering Degree </b></a>
 					</h2>
 					<h3 style="color: whitesmoke">Barcelona, Spain</h3>
 					<img src="https://stylishthemes.github.io/GitHub-Dark/images/octocat-spinner-smil.min.svg"
@@ -315,272 +364,309 @@
 
 
 		<!-- Two -->
-		<section id="two" class="wrapper style3 fade-up">
+		<section id="prog" class="wrapper style3 fade-up">
 			<div class="inner">
 				<h2>Tools, Frameworks and programming languages</h2>
-				<p>Estimation of the devoted time as well as the expertise in the most common programming languages			<div class="features">
-					<section>
-						<span class="icon major fa-code"></span>
-						<h3>Lorem ipsum amet</h3>
-				<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+				<p>Estimation of the devoted time as well as the expertise in the most common programming languages</p>
+			</div>
 		</section>
-		<section>
-			<span class="icon major fa-lock"></span>
-			<h3>Aliquam sed nullam</h3>
-			<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-		</section>
-		<section>
-			<span class="icon major fa-cog"></span>
-			<h3>Sed erat ullam corper</h3>
-			<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-		</section>
-		<section>
-			<span class="icon major fa-desktop"></span>
-			<h3>Veroeros quis lorem</h3>
-			<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-		</section>
-		<section>
-			<span class="icon major fa-chain"></span>
-			<h3>Urna quis bibendum</h3>
-			<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-		</section>
-		<section>
-			<span class="icon major fa-diamond"></span>
-			<h3>Aliquam urna dapibus</h3>
-			<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-		</section>
-</div>
-<ul class="actions">
-	<li><a href="#" class="button">Learn more</a></li>
-</ul>
-</div>
-</section>
-
-<!-- Map -->
-<section id="map" class="wrapper style3 fade-up">
-	<div class="inner">
-		<h2>Visited countries</h2>
-		<p>As a passionate traveller, I've been always concerned in discovering the world as a backpacker</p>
-		<script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
-		<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
-		<script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
-		<div id="mapdiv" style="width: auto; height: 450px;"></div>
+		<!-- amCharts javascript code -->
 		<script type="text/javascript">
-			var map = AmCharts.makeChart("mapdiv",{
-				type: "map",
-				theme: "dark",
-				projection: "miller",
-				panEventsEnabled : true,
-				backgroundColor : "#44445C",
-				backgroundAlpha : 1,
-				zoomControl: {
-					zoomControlEnabled : true
-				},
-				dataProvider : {
-					map : "worldHigh",
-					getAreasFromMap : true,
-					areas :
-							[
-								{
-									"id": "AT",
-									"showAsSelected": true
-								},
-								{
-									"id": "CH",
-									"showAsSelected": true
-								},
-								{
-									"id": "DE",
-									"showAsSelected": true
-								},
-								{
-									"id": "DK",
-									"showAsSelected": true
-								},
-								{
-									"id": "EE",
-									"showAsSelected": true
-								},
-								{
-									"id": "ES",
-									"showAsSelected": true
-								},
-								{
-									"id": "FI",
-									"showAsSelected": true
-								},
-								{
-									"id": "FR",
-									"showAsSelected": true
-								},
-								{
-									"id": "GB",
-									"showAsSelected": true
-								},
-								{
-									"id": "GR",
-									"showAsSelected": true
-								},
-								{
-									"id": "HR",
-									"showAsSelected": true
-								},
-								{
-									"id": "IT",
-									"showAsSelected": true
-								},
-								{
-									"id": "NO",
-									"showAsSelected": true
-								},
-								{
-									"id": "PT",
-									"showAsSelected": true
-								},
-								{
-									"id": "SE",
-									"showAsSelected": true
-								},
-								{
-									"id": "SI",
-									"showAsSelected": true
-								},
-								{
-									"id": "CU",
-									"showAsSelected": true
-								},
-								{
-									"id": "AR",
-									"showAsSelected": true
-								},
-								{
-									"id": "BR",
-									"showAsSelected": true
-								},
-								{
-									"id": "UY",
-									"showAsSelected": true
-								},
-								{
-									"id": "BJ",
-									"showAsSelected": true
-								},
-								{
-									"id": "EG",
-									"showAsSelected": true
-								},
-								{
-									"id": "MA",
-									"showAsSelected": true
-								},
-								{
-									"id": "TG",
-									"showAsSelected": true
-								},
-								{
-									"id": "TN",
-									"showAsSelected": true
-								},
-								{
-									"id": "ID",
-									"showAsSelected": true
-								},
-								{
-									"id": "KH",
-									"showAsSelected": true
-								},
-								{
-									"id": "MM",
-									"showAsSelected": true
-								},
-								{
-									"id": "MY",
-									"showAsSelected": true
-								},
-								{
-									"id": "TH",
-									"showAsSelected": true
-								}
-							]
-				},
-				areasSettings : {
-					autoZoom : true,
-					color : "#C9D5D6",
-					colorSolid : "#84ADE9",
-					selectedColor : "#84ADE9",
-					outlineColor : "#2ED2E8",
-					rollOverColor : "#9EC2F7",
-					rollOverOutlineColor : "#D61562"
-				}
-			});
+			AmCharts.makeChart("chartdiv",
+					{
+						"type": "radar",
+						"categoryField": "country",
+						"startDuration": 2,
+						"fontSize": 13,
+						"theme": "dark",
+						"graphs": [
+							{
+								"balloonText": "[[value]] litres of beer per year",
+								"bullet": "round",
+								"bulletSize": 9,
+								"id": "AmGraph-1",
+								"lineAlpha": 1,
+								"lineThickness": 2,
+								"valueField": "Years"
+							},
+							{
+								"columnWidth": 0.15,
+								"cornerRadiusTop": 1,
+								"fillAlphas": 0.33,
+								"fixedColumnWidth": -1,
+								"fontSize": 0,
+								"gapPeriod": 2,
+								"id": "AmGraph-2",
+								"lineAlpha": 0.33,
+								"negativeLineAlpha": 0.1,
+								"negativeLineColor": "#008000",
+								"precision": 1,
+								"title": "graph 2",
+								"type": "step",
+								"valueField": "Expertise"
+							}
+						],
+						"guides": [],
+						"valueAxes": [
+							{
+								"axisTitleOffset": 20,
+								"gridType": "circles",
+								"id": "ValueAxis-1",
+								"minimum": 0,
+								"axisAlpha": 0.54,
+								"gridAlpha": 0.51
+							}
+						],
+						"allLabels": [],
+						"balloon": {},
+						"titles": [],
+						"dataProvider": [
+							{
+								"country": "C",
+								"Expertise": "4",
+								"Years": "3"
+							},
+							{
+								"country": "C++",
+								"Expertise": "3",
+								"Years": "1"
+							},
+							{
+								"country": "Java",
+								"Expertise": "4",
+								"Years": "5"
+							},
+							{
+								"country": "Android",
+								"Expertise": "5",
+								"Years": "5"
+							},
+							{
+								"country": "Html / JS / PHP",
+								"Expertise": "4",
+								"Years": "2"
+							},
+							{
+								"country": "Python",
+								"Expertise": "3",
+								"Years": "3"
+							}
+						]
+					}
+			);
 		</script>
-	</div>
-</section>
+		<div id="chartdiv" style="width: 100%; height: 400px; background-color: #282828;"></div>
+	</section>
 
-<section id="three" class="wrapper style1 fade-up">
-	<div class="inner">
-		<h2>Get in touch</h2>
-		<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-		<div class="split style1">
-			<section>
-				<form method="post" action="#">
-					<div class="field half first">
-						<label for="name">Name</label>
-						<input type="text" name="name" id="name" />
-					</div>
-					<div class="field half">
-						<label for="email">Email</label>
-						<input type="text" name="email" id="email" />
-					</div>
-					<div class="field">
-						<label for="message">Message</label>
-						<textarea name="message" id="message" rows="5"></textarea>
-					</div>
-					<ul class="actions">
-						<li><a href="" class="button submit">Send Message</a></li>
-					</ul>
-				</form>
-			</section><br>
-			<section>
-				<ul class="contact">
-					<table class="text-center" style="width: 100%;">
-						<tr>
-							<td>
-								<a href="http://guillesierra.com/index.html/RESUME_Guillermo_Sierra.pdf">
-									<img src="http://www.iconarchive.com/download/i34220/treetog/i/PDF.ico" style="width:  22px;height:  22px;" alt="">
-									&nbsp; Resumé CV Sierra </a>
-							</td>
-							<td>
-								<img src="http://icons.iconseeker.com/ico/rounded-world-flags/france-flag-2.ico" style="width:  24px;height:  22px;" alt=""> (+33) 611 253 179</td>
-						</tr>
-						<tr>
-							<td>
-								<a href="https://es.linkedin.com/in/sierraguillermo">
-									<img src="http://b-i.forbesimg.com/kensundheim/files/2013/12/256px-Linkedin_icon.svg_.png" style="width:  22px;height:  22px;" alt="">
-									&nbsp; In /&nbsp;sierraguillermo
-								</a>
-							</td>
-							<td>
-								<img src="http://veriberi.lt/upload/images/spain_640.png" style="width:  28px;height:  22px;" alt=""> (+34) 617 566 888</td>
-						</tr>
-						<tr>
-							<td>
-								<a href="https://github.com/gsietsetb">
-									<img src="https://stylishthemes.github.io/GitHub-Dark/images/octocat-spinner-smil.min.svg" style="width:  22px;height:  22px;" alt="">
-									&nbsp; Github: &nbsp; /gsietsetb
-								</a>
-							</td>
-							<td>
-								<img src="http://img.freeflagicons.com/thumb/round_icon/switzerland/switzerland_640.png" style="width:  28px;height:  22px;" alt=""> (+41) 763 172 613<br />
-							</td>
-						</tr>
-					</table>
-				</ul>
-			</section>
+	<!-- Map -->
+	<section id="map" class="wrapper style3 fade-up">
+		<div class="inner">
+			<h2>Visited countries</h2>
+			<p>Living as a Digital Nomad involves changing drastically of country of residence, and therefore a lot
+				of </p>
+			<iframe width="60%" height="315" src="https://nomadlist.com/embed/Guillelekos" scrolling="no"
+					frameborder="0" allowfullscreen></iframe>
+			<p>As a passionate traveller, I've been always concerned in discovering the world as a backpacker</p>
+			<script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+			<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+			<script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
+			<div id="mapdiv" style="width: 80%; height: 450px;"></div>
+			<script type="text/javascript">
+				var map = AmCharts.makeChart("mapdiv", {
+					type: "map",
+					theme: "dark",
+					projection: "miller",
+					panEventsEnabled: true,
+					backgroundColor: "#44445C",
+					backgroundAlpha: 1,
+					zoomControl: {
+						zoomControlEnabled: true
+					},
+					dataProvider: {
+						map: "worldHigh",
+						getAreasFromMap: true,
+						areas: [
+							{
+								"id": "AT",
+								"showAsSelected": true
+							},
+							{
+								"id": "CH",
+								"showAsSelected": true
+							},
+							{
+								"id": "DE",
+								"showAsSelected": true
+							},
+							{
+								"id": "DK",
+								"showAsSelected": true
+							},
+							{
+								"id": "EE",
+								"showAsSelected": true
+							},
+							{
+								"id": "ES",
+								"showAsSelected": true
+							},
+							{
+								"id": "FI",
+								"showAsSelected": true
+							},
+							{
+								"id": "FR",
+								"showAsSelected": true
+							},
+							{
+								"id": "GB",
+								"showAsSelected": true
+							},
+							{
+								"id": "GR",
+								"showAsSelected": true
+							},
+							{
+								"id": "HR",
+								"showAsSelected": true
+							},
+							{
+								"id": "IT",
+								"showAsSelected": true
+							},
+							{
+								"id": "NO",
+								"showAsSelected": true
+							},
+							{
+								"id": "PT",
+								"showAsSelected": true
+							},
+							{
+								"id": "SE",
+								"showAsSelected": true
+							},
+							{
+								"id": "SI",
+								"showAsSelected": true
+							},
+							{
+								"id": "CU",
+								"showAsSelected": true
+							},
+							{
+								"id": "AR",
+								"showAsSelected": true
+							},
+							{
+								"id": "BR",
+								"showAsSelected": true
+							},
+							{
+								"id": "UY",
+								"showAsSelected": true
+							},
+							{
+								"id": "BJ",
+								"showAsSelected": true
+							},
+							{
+								"id": "EG",
+								"showAsSelected": true
+							},
+							{
+								"id": "MA",
+								"showAsSelected": true
+							},
+							{
+								"id": "TG",
+								"showAsSelected": true
+							},
+							{
+								"id": "TN",
+								"showAsSelected": true
+							},
+							{
+								"id": "ID",
+								"showAsSelected": true
+							},
+							{
+								"id": "KH",
+								"showAsSelected": true
+							},
+							{
+								"id": "MM",
+								"showAsSelected": true
+							},
+							{
+								"id": "MY",
+								"showAsSelected": true
+							},
+							{
+								"id": "TH",
+								"showAsSelected": true
+							}
+						]
+					},
+					areasSettings: {
+						autoZoom: true,
+						color: "#C9D5D6",
+						colorSolid: "#84ADE9",
+						selectedColor: "#84ADE9",
+						outlineColor: "#2ED2E8",
+						rollOverColor: "#9EC2F7",
+						rollOverOutlineColor: "#D61562"
+					}
+				});
+			</script>
 		</div>
-	</div>
-</section>
+	</section>
 
+	<section id="contact" class="wrapper style1 fade-up">
+		<div class="inner">
+			<h2>Get in touch</h2>
+			<table class="text-center" style="width: 80%; color: whitesmoke; text-align: center">
+				<tr>
+					<td>
+						<a href="http://guillesierra.com/index.html/RESUME_Guillermo_Sierra.pdf">
+							<img src="http://www.iconarchive.com/download/i34220/treetog/i/PDF.ico"
+								 style="width:  22px;height:  22px;" alt="">
+							&nbsp; Resumé CV Sierra </a>
+					</td>
+					<td>
+						<img src="http://icons.iconseeker.com/ico/rounded-world-flags/france-flag-2.ico"
+							 style="width:  24px;height:  22px;" alt=""> (+33) 611 253 179
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://es.linkedin.com/in/sierraguillermo">
+							<img src="http://b-i.forbesimg.com/kensundheim/files/2013/12/256px-Linkedin_icon.svg_.png"
+								 style="width:  22px;height:  22px;" alt="">
+							&nbsp; In /&nbsp;sierraguillermo
+						</a>
+					</td>
+					<td>
+						<img src="http://veriberi.lt/upload/images/spain_640.png" style="width:  28px;height:  22px;"
+							 alt=""> (+34) 617 566 888
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="https://github.com/gsietsetb">
+							<img src="https://stylishthemes.github.io/GitHub-Dark/images/octocat-spinner-smil.min.svg"
+								 style="width:  22px;height:  22px;" alt="">
+							&nbsp; Github: &nbsp; /gsietsetb
+						</a>
+					</td>
+					<td>
+						<img src="http://img.freeflagicons.com/thumb/round_icon/switzerland/switzerland_640.png"
+							 style="width:  28px;height:  22px;" alt=""> (+41) 763 172 613<br/>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</section>
 </div>
 
 <!-- Footer -->
