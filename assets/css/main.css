@@ -2939,7 +2939,7 @@ input[type="radio"] + label:before {
     font-size: 1.25em;
 }
 
-.wrapper.style1 .icon.major:before {
+.wrapper.project .icon.major:before {
     color: lightskyblue;
 }
 
@@ -2947,7 +2947,7 @@ input[type="radio"] + label:before {
     color: #493382;
 }
 
-.wrapper.style2 .icon.major:before {
+.wrapper.studies .icon.major:before {
     color: #5052b5;
 }
 
@@ -2955,7 +2955,7 @@ input[type="radio"] + label:before {
     color: #3e4094;
 }
 
-.wrapper.style3 .icon.major:before {
+.wrapper.work .icon.major:before {
     color: lightblue;
 }
 
@@ -3307,11 +3307,11 @@ header h6 + p {
     padding-left: 2.5em;
 }
 
-.split.style1 > :nth-child(2n - 1) {
+.split.project > :nth-child(2n - 1) {
     width: calc(66.66666% - 2.5em);
 }
 
-.split.style1 > :nth-child(2n) {
+.split.project > :nth-child(2n) {
     width: calc(33.33333% - 2.5em);
 }
 
@@ -3329,11 +3329,11 @@ header h6 + p {
         padding-left: 2em;
     }
 
-    .split.style1 > :nth-child(2n - 1) {
+    .split.project > :nth-child(2n - 1) {
         width: calc(66.66666% - 2em);
     }
 
-    .split.style1 > :nth-child(2n) {
+    .split.project > :nth-child(2n) {
         width: calc(33.33333% - 2em);
     }
 
@@ -3631,27 +3631,27 @@ table.alt tfoot {
     background-color: #003366;
 }
 
-.wrapper.style1 {
+.wrapper.project {
     background-color: #303e49;
 }
 
-.wrapper.style1-alt {
+.wrapper.project-alt {
     background-color: #303e49;
 }
 
-.wrapper.style2 {
+.wrapper.studies {
     background: linear-gradient(to bottom, #333333, #003366);
 }
 
-.wrapper.style2-alt {
+.wrapper.studies-alt {
     background-color: black;
 }
 
-.wrapper.style3 {
+.wrapper.work {
     background-color: darkslategray;
 }
 
-.wrapper.style3-alt {
+.wrapper.work-alt {
     background-color: steelblue;
 }
 

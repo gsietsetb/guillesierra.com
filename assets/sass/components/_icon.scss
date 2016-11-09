@@ -29,7 +29,7 @@
     &:before {
       font-size: 1.25em;
 
-      .wrapper.style1 & {
+      .wrapper.project & {
         color: _palette(accent1);
       }
 
@@ -37,7 +37,7 @@
         color: _palette(accent1-alt);
       }
 
-      .wrapper.style2 & {
+      .wrapper.studies & {
         color: _palette(accent2);
       }
 
@@ -45,7 +45,7 @@
         color: _palette(accent2-alt);
       }
 
-      .wrapper.style3 & {
+      .wrapper.work & {
         color: _palette(accent3);
       }
 

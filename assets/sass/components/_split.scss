@@ -22,7 +22,7 @@
     padding-left: 2.5em;
   }
 
-  &.style1 {
+  &.project {
     > :nth-child(2n - 1) {
       width: calc(66.66666% - 2.5em);
     }
@@ -45,7 +45,7 @@
       padding-left: 2em;
     }
 
-    &.style1 {
+    &.project {
       > :nth-child(2n - 1) {
         width: calc(66.66666% - 2em);
       }

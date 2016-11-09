@@ -17,6 +17,17 @@
 	<script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
 	<script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
 	<script type="text/javascript" src="https://www.amcharts.com/lib/3/themes/dark.js"></script>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!--[if lte IE 8]>
+	<script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
+
 	<!--[if lte IE 8]>
 	<script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -103,14 +114,13 @@
 			</ul>
 		</nav>
 	</div>
-
 </section>
 
 <!-- Wrapper -->
 <div id="wrapper">
 
 	<!-- Intro -->
-	<section id="intro" class="wrapper style1 fullscreen fade-up">
+	<section id="intro" class="wrapper project fullscreen fade-up">
 		<div class="inner">
 			<span><img src="img/Sierra.jpg" width="150" height="150">
 				<h1>&Gopf;uillermo &Sopf;ierra &Aopf;iello</h1></span>
@@ -162,30 +172,33 @@
 		</div>
 	</section>
 
-	<section class="wrapper style2 spotlights">
 		<!-- MatchYang -->
-		<section id="matchyang" >
+	<section id="matchyang" class="project wrapper spotlights">
 			<a href="#" class="image"><img src="img/fishYang.png" alt="" data-position="center center" /></a>
 			<div class="content">
 				<div class="inner">
 					<h2 class="button" >
-						<a href="http://www.matchyang.guillesierra.com/"> <img src="img/fishYang.png" width="40" height="40" alt="matchyang"> <b>MatchYang</b></a>
+						<a href="https://matchyang.guillesierra.com/">
+							<img src="img/fishYang.png" width="40" height="40" alt="matchyang">
+							<b>MatchYang</b>
+						</a>
 					</h2>
 					<h3>Oct 16 - Project in Barcelona</h3>
 					<img src="img/html5-css-javascript-logos.png"
 						 width="90" height="30" alt="Java">
 					<img src="img/php.png"
 						 width="30" height="30" alt="php">
-					<img src="https://stylishthemes.github.io/GitHub-Dark/images/octocat-spinner-smil.min.svg"
+					<img src="img/git.svg"
 						 width="30" height="30" alt="Git">
-					<p>Real time face detection and face matching project developed with a bench of web tools.</p>
+					<p>Real time face detection and face matching software.<br>
+						Personal project which development involves fusing bench of web tools.</p>
 				</div>
 			</div>
 		</section>
 
 		<!-- Amadeus -->
-		<section id="Amadeus" >
-			<a href="#" class="image"><img src="http://www.lepoint.fr/images/2014/11/14/sophia-amadeus-nice-2921619-jpg_2555645.JPG" alt="" data-position="center center" /></a>
+	<section id="Amadeus" class="work wrapper spotlights">
+		<a href="#" class="image"><img src="img/amadeus.JPG" alt="" data-position="center center"/></a>
 			<div class="content">
 				<div class="inner">
 					<h2 class="button" >
@@ -195,7 +208,7 @@
 						</a>
 					</h2>
 					<h3>Jun 16 - Booking Engine - Nice, France Area</h3>
-					<img src="http://www.iconarchive.com/download/i45867/tatice/cristal-intense/Java.ico"
+					<img src="img/java.ico"
 						 width="30" height="30" alt="Java">
 					<p>Air department. Java Software developer engineer in Tribe agile team. E-commerce product and bookings.</p>
 
@@ -204,7 +217,7 @@
 		</section>
 
 		<!-- Seat -->
-		<section id="Seat" >
+	<section id="Seat" class="work wrapper spotlights">
 			<a href="#" class="image"><img src="img/seat.jpg" alt="" data-position="center center" /></a>
 			<div class="content">
 				<div class="inner">
@@ -215,16 +228,16 @@
 						</a>
 					</h2>
 					<h3>Mar 16 - Automotive - Barcelona area, Spain </h3>
-					<img src="http://www.iconarchive.com/download/i18728/iconshock/real-vista-mobile/android-platform.ico"
+					<img src="img/android.ico"
 						 width="30" height="30" alt="Android">
-					<p><a href="http://www.rueckerlypsa.es/?lang=en">Rücker Lypsa</a> , Android developer for SEAT. SeatTap Android application: NFC controller for interactive car dashboard.</p>
-
+					<p><a href="http://www.rueckerlypsa.es/?lang=en">Rücker Lypsa</a>, Android developer for SEAT.
+						SeatTap Android application: NFC controller for interactive car dashboard.</p>
 				</div>
 			</div>
 		</section>
 
 		<!-- MWC -->
-		<section id="MWC" >
+	<section id="MWC" class="project wrapper spotlights">
 			<a href="#" class="image"><img src="img/mwc.jpg" alt="" data-position="center center" /></a>
 			<div class="content">
 				<div class="inner">
@@ -235,7 +248,7 @@
 						</a>
 					</h2>
 					<h3>Feb 16 - Mobile - Barcelona area, Spain </h3>
-					<img src="http://www.iconarchive.com/download/i18728/iconshock/real-vista-mobile/android-platform.ico"
+					<img src="img/android.ico"
 						 width="30" height="30" alt="Android">
 					<p>Attendee as per guest invitation</p>
 
@@ -244,20 +257,22 @@
 		</section>
 
 		<!-- EWSN -->
-		<section id="EWSN" >
+	<section id="EWSN" class="studies wrapper spotlights">
 			<a href="#" class="image"><img src="img/ewsn.jpg" alt="" data-position="center center" /></a>
 			<div class="content">
 				<div class="inner">
 					<h2 class="button" >
-						<a href="http://www.iti.tugraz.at/EWSN2016/cms/index.php?id=36"> <img src="http://sites.tech.uh.edu/isgrin/files/2013/11/tmote-sky-blue.gif" width="30" height="30" alt="SEAT">
-							<b>EWSN 2016 Challenge</b></a>
+						<a href="http://www.iti.tugraz.at/EWSN2016/cms/index.php?id=36">
+							<img src="img/telosB.gif" width="30" height="30" alt="SEAT">
+							<b>EWSN 2016 Challenge</b>
+						</a>
 					</h2>
 					<h3>Feb 16 - Final Degree project at UPC promoted to EWSN challenge 2016 </h3>
-					<img src="http://www.unixstickers.com/image/data/stickers/C/C%20language.sh.png"
+					<img src="img/c-prog.png"
 						 width="30" height="30" alt="C">
-					<img src="https://maxcdn.icons8.com/windows8/PNG/512/Industry/electronics-512.png"
+					<img src="img/embed.png"
 						 width="30" height="30" alt="IoT">
-					<img src="http://www.control4.com/files/large/b9d80879aba75c9"
+					<img src="img/iot.gif"
 						 width="30" height="30" alt="Embedded">
 					<p>Dependability Competition within the <a href="http://www.iti.tugraz.at/EWSN2016/cms/index.php?id=36">International Conference on Embedded Wireless Systems and Networks [EWSN] 2016</a>. <br>
 						IoT Network of up to 15 TelosB nodes aiming to maximize three metrics (energy efficieny, low latency and low delay) in presence of RF interferences. </p>
@@ -267,7 +282,7 @@
 		</section>
 
 		<!-- Intel -->
-		<section id="Intel" >
+	<section id="Intel" class="project wrapper spotlights">
 			<a href="#" class="image"><img src="img/intel2.png" alt="" data-position="center center" /></a>
 			<div class="content">
 				<div class="inner">
@@ -276,56 +291,57 @@
 							<b>Intel Edison 2016 Challenge</b></a>
 					</h2>
 					<h3> Oct 15 - Movilforum IoT Hackathon Barcelona</h3>
-					<img src="http://www.unixstickers.com/image/data/stickers/C/C%20language.sh.png"
+					<img src="img/c-prog.png"
 						 width="30" height="30" alt="C">
-					<img src="https://maxcdn.icons8.com/windows8/PNG/512/Industry/electronics-512.png"
+					<img src="img/embed.png"
 						 width="30" height="30" alt="IoT">
-					<img src="http://www.control4.com/files/large/b9d80879aba75c9"
+					<img src="img/iot.gif"
 						 width="30" height="30" alt="Embedded">
 					<p>IoT hackathon organized at Barcelona. Awarded with whole Intel Edison development kit (valued at ~250€).<br>
 						Best projects would be promoted to<a href="https://ficod.es/">FICOD</a> 2015 in Madrid.<p>
-
 				</div>
 			</div>
 		</section>
 
 		<!-- EPFL -->
-		<section id="EPFL" >
+	<section id="EPFL" class="studies wrapper spotlights">
 			<a href="#" class="image">
-				<img src="http://photonics.epfl.ch/files/content/users/159310/files/image2_0.jpg" alt="" data-position="center center" /></a>
+				<img src="img/epfl3.jpg" alt="" data-position="center center"/></a>
 			<div class="content">
 				<div class="inner">
 					<h2 class="button" >
-						<a href="http://www.epfl.ch/"> <img src="http://library.epfl.ch/files/content/sites/library2/files/vie-culturelle/conference/openaccessday/EPFL.jpg" width="30" height="30" alt="SEAT">
+						<a href="http://www.epfl.ch/"> <img src="img/epfl-icon.jpg" width="30" height="30" alt="SEAT">
 							<b>EPFL - Self-Driving Car Project</b></a>
 					</h2>
 					<h3 style="color: whitesmoke">Jun 15 - Automotive - EFPL, Lausanne, Switzerland </h3>
-					<img src="https://stylishthemes.github.io/GitHub-Dark/images/octocat-spinner-smil.min.svg"
+					<img src="img/git.svg"
 						 width="30" height="30" alt="Git">
-					<img src="https://www.planet-source-code.com/vb/2010Redesign/images/LangugeHomePages/CPlusPlus.jpg"
+					<img src="img/c-prog.png"
 						 width="30" height="30" alt="C">
-					<img src="https://maxcdn.icons8.com/windows8/PNG/512/Industry/electronics-512.png"
+					<img src="img/embed.png"
 						 width="30" height="30" alt="Embedded">
-					<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwk4XX75x15ZDoEb7S5N7BfMfn03U3whlbxONPxWFNhSF8rxOSOA"
-						 width="30" height="30" alt="Ros">
+					<img src="img/ros.png"
+						 width="60" height="30" alt="Ros">
 					<p>Sensed information in one of the vehicles is send to other vehicles which use it in order to take certain decisions.
 						In the context of ROS framework, hands-on work directly on the vehicle, electronics, antennas, and Software. </p>
-
 				</div>
 			</div>
 		</section>
 
 		<!-- Hackathon EPFL -->
-		<section id="HackEPFL" >
-			<a href="#" class="image"><img src="http://drmcapitolgroup.com/wp-content/uploads/2013/11/Hackathon.jpg" alt="" data-position="center center" /></a>
+	<section id="HackEPFL" class="project wrapper spotlights">
+		<a href="#" class="image">
+			<img src="img/fac-zuckerberg.jpg" alt="" data-position="center center"/>
+		</a>
 			<div class="content">
 				<div class="inner">
 					<h2 class="button">
-						<a href="https://www.facebook.com/hackepfl/"> <img src="https://rocketfans.com/wp-content/uploads/2014/12/Buy-facebook-likes.png" width="30" height="30" alt="SEAT">
+						<a href="https://www.facebook.com/hackepfl/">
+							<img src="img/fbook.png" width="30" height="30" alt="SEAT">
 							<b>Facebook Hachathon EPFL 2015</b></a>
 					</h2>
 					<h3 style="color: whitesmoke">Epfl, Lausanne, Switzerland - Second Place with Phood App</h3>
-					<img src="http://www.iconarchive.com/download/i18728/iconshock/real-vista-mobile/android-platform.ico"
+					<img src="img/android.ico"
 						 width="30" height="30" alt="Android">
 					<p>Hackathon organized by Facebook at EPFL, Lausanne, Switzerland. First prize was an stage at Facebook California. <p>
 				</div>
@@ -333,39 +349,39 @@
 		</section>
 
 		<!-- UPC -->
-		<section id="UPC" >
-			<a href="#" class="image"><img src="http://www.upc.edu/gestioestudis/files/fotos_unitats/109_2.jpg" alt="" data-position="center center" /></a>
+	<section id="UPC" class="studies wrapper spotlights">
+		<a href="#" class="image">
+			<img src="img/upc-etsetb.jpg" alt="" data-position="center center"/></a>
 			<div class="content">
 				<div class="inner">
 					<h2 class="button">
 						<a href="http://upc.com"> <img
-								src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Logo_UPC.svg/2000px-Logo_UPC.svg.png"
+								src="img/upc-logo.png"
 								width="30" height="30" alt="SEAT">
 							<b>UPC - Telecommunication Engineering Degree </b></a>
 					</h2>
-					<h3 style="color: whitesmoke">Barcelona, Spain</h3>
-					<img src="https://stylishthemes.github.io/GitHub-Dark/images/octocat-spinner-smil.min.svg"
+					<h3 style="color: whitesmoke">Sept 2010 - ETSETB, UPC, Barcelona, Spain</h3>
+					<img src="img/git.svg"
 						 width="30" height="30" alt="Git">
-					<img src="https://www.planet-source-code.com/vb/2010Redesign/images/LangugeHomePages/CPlusPlus.jpg"
+					<img src="img/c++.jpg"
 						 width="30" height="30" alt="C++">
-					<img src="https://maxcdn.icons8.com/windows8/PNG/512/Industry/electronics-512.png"
+					<img src="img/embed.png"
 						 width="30" height="30" alt="Embedded">
-					<img src="http://www.control4.com/files/large/b9d80879aba75c9"
-						 width="30" height="30" alt="Embedded">
-					<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRwk4XX75x15ZDoEb7S5N7BfMfn03U3whlbxONPxWFNhSF8rxOSOA"
-						 width="30" height="30" alt="Embedded">
-					<img src="http://www.iconarchive.com/download/i18728/iconshock/real-vista-mobile/android-platform.ico"
+					<img src="img/iot.gif"
+						 width="30" height="30" alt="IoT">
+					<img src="img/ros.png"
+						 width="30" height="30" alt="Ros">
+					<img src="img/android.ico"
 						 width="30" height="30" alt="Android">
-					<img src="http://www.unixstickers.com/image/data/stickers/C/C%20language.sh.png"
+					<img src="img/c-prog.png"
 						 width="30" height="30" alt="C">
 					<p>Telecommunication Engineering degree, Telematics branch. Erasmus at EPFL.</p>
 				</div>
 			</div>
 		</section>
 
-
-		<!-- Two -->
-		<section id="prog" class="wrapper style3 fade-up">
+	<!-- ProgLang -->
+	<section id="prog" class="wrapper work fade-up">
 			<div class="inner">
 				<h2>Tools, Frameworks and programming languages</h2>
 				<p>Estimation of the devoted time as well as the expertise in the most common programming languages</p>
@@ -457,20 +473,17 @@
 			);
 		</script>
 		<div id="chartdiv" style="width: 100%; height: 400px; background-color: #282828;"></div>
-	</section>
 
 	<!-- Map -->
-	<section id="map" class="wrapper style3 fade-up">
+	<section id="map" class="wrapper work fade-up">
 		<div class="inner">
 			<h2>Visited countries</h2>
-			<p>Living as a Digital Nomad involves changing drastically of country of residence, and therefore a lot
-				of </p>
+			<p>Living as a Digital Nomad involves changing so sudden and drastically of country of residence, <br>
+				that sometimes you lose the sense of where are you actuaylly living and what to call home.</p>
 			<iframe width="60%" height="315" src="https://nomadlist.com/embed/Guillelekos" scrolling="no"
 					frameborder="0" allowfullscreen></iframe>
-			<p>As a passionate traveller, I've been always concerned in discovering the world as a backpacker</p>
-			<script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
-			<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
-			<script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
+			<p>As a passionate traveller, I've been always concerned in discovering the world as a backpacker.
+				<br>Here's the 41 visited countries until now.</p>
 			<div id="mapdiv" style="width: 80%; height: 450px;"></div>
 			<script type="text/javascript">
 				var map = AmCharts.makeChart("mapdiv", {
@@ -623,13 +636,13 @@
 		</div>
 	</section>
 
-	<section id="contact" class="wrapper style1 fade-up">
+	<section id="contact" class="wrapper project fade-up">
 		<div class="inner">
 			<h2>Get in touch</h2>
 			<table class="text-center" style="width: 80%; color: whitesmoke; text-align: center">
 				<tr>
 					<td>
-						<a href="http://guillesierra.com/index.html/RESUME_Guillermo_Sierra.pdf">
+						<a href="assets/file/RESUME_Guillermo_Sierra.pdf">
 							<img src="http://www.iconarchive.com/download/i34220/treetog/i/PDF.ico"
 								 style="width:  22px;height:  22px;" alt="">
 							&nbsp; Resumé CV Sierra </a>
@@ -642,27 +655,38 @@
 				<tr>
 					<td>
 						<a href="https://es.linkedin.com/in/sierraguillermo">
-							<img src="http://b-i.forbesimg.com/kensundheim/files/2013/12/256px-Linkedin_icon.svg_.png"
+							<img src="img/ln.png"
 								 style="width:  22px;height:  22px;" alt="">
 							&nbsp; In /&nbsp;sierraguillermo
 						</a>
 					</td>
 					<td>
-						<img src="http://veriberi.lt/upload/images/spain_640.png" style="width:  28px;height:  22px;"
+						<img src="img/sp.png" style="width:  28px;height:  22px;"
 							 alt=""> (+34) 617 566 888
 					</td>
 				</tr>
 				<tr>
 					<td>
 						<a href="https://github.com/gsietsetb">
-							<img src="https://stylishthemes.github.io/GitHub-Dark/images/octocat-spinner-smil.min.svg"
+							<img src="img/git.svg"
 								 style="width:  22px;height:  22px;" alt="">
 							&nbsp; Github: &nbsp; /gsietsetb
 						</a>
 					</td>
 					<td>
-						<img src="http://img.freeflagicons.com/thumb/round_icon/switzerland/switzerland_640.png"
+						<img src="img/ch.png"
 							 style="width:  28px;height:  22px;" alt=""> (+41) 763 172 613<br/>
+					</td>
+				<tr>
+					<td>
+						<a href="https://mail.google.com/mail/?view=cm&fs=1&to=gsierra@guillesierra.com">
+							<img src="img/gmail.png"
+								 style="width:  22px;height:  22px;" alt="">
+							&nbsp; gsierra@guillesierra.com
+						</a>
+					</td>
+					<td>
+
 					</td>
 				</tr>
 			</table>
@@ -685,16 +709,5 @@
 		</ul>
 	</div>
 </footer>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
-<!--[if lte IE 8]>
-<script src="assets/js/ie/respond.min.js"></script><![endif]-->
-<script src="assets/js/main.js"></script>
-
 </body>
 </html>
