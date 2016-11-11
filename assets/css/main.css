@@ -4319,7 +4319,7 @@ body.is-loading #sidebar nav ul li {
 
 #intro {
     background-attachment: scroll;
-    background-image: url("../../img/skylineBCN2.jpg");
+    background-image: url("../img/skylineBCN2.jpg");
     background-position: top left;
     background-repeat: no-repeat;
     /*opacity: 0.4;*/
