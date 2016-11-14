@@ -1998,7 +1998,7 @@ body {
 }
 
 body {
-    background-color: black;
+    background-color: white;
 }
 
 body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -3427,7 +3427,7 @@ body.is-ie .spotlights > section {
 }
 
 .spotlights > section > .content {
-    padding: 4em 5em 2em 5em;
+    padding: 1em 1em 1em 1em;
     display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
@@ -3632,7 +3632,7 @@ table.alt tfoot {
 }
 
 .wrapper.project {
-    background-color: #303e49;
+    background: linear-gradient(to bottom, lightgoldenrodyellow, seashell);
 }
 
 .wrapper.project-alt {
@@ -3640,7 +3640,7 @@ table.alt tfoot {
 }
 
 .wrapper.studies {
-    background: linear-gradient(to bottom, #333333, #003366);
+    background: linear-gradient(to bottom, lightskyblue, seashell);
 }
 
 .wrapper.studies-alt {
@@ -3648,7 +3648,7 @@ table.alt tfoot {
 }
 
 .wrapper.work {
-    background-color: darkslategray;
+    background: linear-gradient(to bottom, lightsalmon, seashell);
 }
 
 .wrapper.work-alt {
@@ -4319,7 +4319,7 @@ body.is-loading #sidebar nav ul li {
 
 #intro {
     background-attachment: scroll;
-    background-image: url("../img/skylineBCN2.jpg");
+    background-image: url("../img/skylineBCNtransp.png");
     background-position: top left;
     background-repeat: no-repeat;
     /*opacity: 0.4;*/
@@ -4485,5 +4485,22 @@ body.is-loading #sidebar nav ul li {
         display: none;
     }
 }
+
+.forkme {
+    position: fixed;
+    top: -4em;
+    right: -4em;
+    width: 149px;
+    height: 149px;
+    background: transparent url("/assets/img/forkme-right-darkblue.png") no-repeat 0 0;
+    background-size: contain;
+    z-index: 10000
 }
+
+@media only screen and (max-width: 979px) {
+    .forkme {
+        /*display: none*/
+    }
+}
+
 
