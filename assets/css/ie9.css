@@ -1,88 +1,123 @@
 /*
-	Hyperspace by HTML5 UP
+	Future Imperfect by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Type */
+/* List */
 
-h1.major:after {
-    background: #b74e91;
-}
+	ul.posts article:after {
+		clear: both;
+		content: '';
+		display: block;
+	}
 
-/* Wrapper */
+	ul.posts article .image {
+		display: table-cell;
+		vertical-align: top;
+	}
 
-.wrapper.fullscreen {
-    min-height: 0;
-    padding-bottom: 6em;
-    padding-top: 6em;
-}
+	ul.posts article header {
+		display: table-cell;
+		padding-right: 1em;
+		vertical-align: top;
+	}
 
-body.is-ie .wrapper.fullscreen {
-    height: auto;
-}
+/* Author */
 
-/* Spotlights */
+	.skill .name {
+		display: inline-block;
+		vertical-align: middle;
+	}
 
-.spotlights > section {
-    padding-left: 20em;
-    position: relative;
-}
+	.skill img {
+		display: inline-block;
+		vertical-align: middle;
+	}
 
-.spotlights > section > .image {
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 20em;
-}
+/* Post */
 
-.spotlights > section > .content {
-    width: 100%;
-}
+	.post:after {
+		clear: both;
+		content: '';
+		display: block;
+	}
 
-/* Features */
+	.post > header:after {
+		clear: both;
+		content: '';
+		display: block;
+	}
 
-.features:after {
-    clear: both;
-    content: '';
-    display: block;
-}
+	.post > header .title {
+		display: table-cell;
+		vertical-align: top;
+		width: 65%;
+	}
 
-.features section {
-    float: left;
-}
+	.post > header .meta {
+		display: table-cell;
+		vertical-align: top;
+		width: 30%;
+	}
 
-/* Split */
+	.post > footer:after {
+		clear: both;
+		content: '';
+		display: block;
+	}
 
-.split:after {
-    clear: both;
-    content: '';
-    display: block;
-}
+	.post > footer .actions {
+		display: inline-block;
+	}
 
-.split > * {
-    float: left;
-}
+	.post > footer .stats {
+		display: inline-block;
+		margin-left: 2em;
+	}
 
-/* Sidebar */
+/* Mini Post */
 
-#sidebar nav a:after {
-    background-color: #b74e91;
-}
+	.mini-post .image {
+		display: block;
+	}
 
 /* Header */
 
-#header:after {
-    clear: both;
-    content: '';
-    display: block;
-}
+	#header:after {
+		clear: both;
+		content: '';
+		display: block;
+	}
 
-#header > .title {
-    float: left;
-}
+	#header h1 {
+		float: left;
+	}
 
-#header > nav {
-    float: right;
-}
+	#header .links {
+		float: left;
+	}
+
+	#header .main {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+/* Wrapper */
+
+/* Sidebar */
+
+	#sidebar {
+		display: table-cell;
+		margin-right: 0;
+		padding-right: 3em;
+		vertical-align: top;
+	}
+
+/* Main */
+
+	#main {
+		display: table-cell;
+		vertical-align: top;
+	}
