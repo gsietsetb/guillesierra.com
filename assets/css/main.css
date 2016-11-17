@@ -2984,7 +2984,7 @@ header p {
 }
 
 table {
-	margin: 0 0 2em 0;
+	margin: 0 0 0.1em 0;
 	width: 100%;
 }
 
@@ -2992,6 +2992,7 @@ table tbody tr {
 	border: solid 1px rgba(160, 160, 160, 0.3);
 	border-left: 0;
 	border-right: 0;
+	text-align: center;
 }
 
 table tbody tr:nth-child(2n + 1) {
@@ -2999,7 +3000,17 @@ table tbody tr:nth-child(2n + 1) {
 }
 
 table td {
-	padding: 0.75em 0.75em;
+	padding: 0.15em 0.15em;
+}
+table td a {
+	border: none;
+}
+
+table td a img{
+	margin: 0;
+	width: 45px;
+	height: 45px;
+	/*background-image: url(../img/woodTransp.png);*/
 }
 
 table th {
@@ -3549,6 +3560,11 @@ body.is-menu-visible #menu {
 		padding: 1.5em;
 	}
 
+}
+
+skills {
+	background: #464646 url('assets/img/wood1.jpg') no-repeat fixed center center;
+	display: inline;
 }
 
 
