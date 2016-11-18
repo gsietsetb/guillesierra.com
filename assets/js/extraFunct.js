@@ -3357,97 +3357,49 @@
 // });
 
 /** Toggle function*/
+$(".a").click(function() {
+    $(this).toggleClass('selected');
 
-var jobs=false, projects=false, studies=false;
-// Classes not supported by current version:
-//			class filter {
-//				constructor(name) {
-//					this.name = name;
-//					this.width = true;
-//				}
-//			}
-// function toggleJobs() {
-// 	jobs ? false : true;
-// 	toggleDisplay();
-// }
-// function toggleProjects() {
-// 	projects ? false : true;
-// 	toggleDisplay();
-// }
-// function toggleStudies() {
-// 	projects ? false : true;
-// 	toggleDisplay();
-// }
-function toggleJ(){
-	jobs = jobs ? false : true;
-	toggleFilter("projects", false);
-	toggleFilter("studies", false);
-	// toggleDisplay();
-}
+    $(".courseBox").hide();
 
-function toggleP(a){
-	projects = projects ? false : true;
-	toggleFilter("jobs", false);
-	toggleFilter("studies", false);
-	// toggleDisplay();
-}
-function toggleS(a){
-	studies = studies ? false : true;
-	toggleFilter("jobs", false);
-	toggleFilter("projects", false);
-	// toggleDisplay();
-}
-function toggleDisplay(){
+    var datatypes = $(".courseBox");
+
+    $(".button.datatype").not('.selected').each(function() {
+        var selClass = $(this).attr('id').replace('Button', '');
+
+        datatypes = datatypes.filter(".courseBox[data-type!='" + selClass + "']");
+    });
+
+    $(".button.selected.datalocation").each(function() {
+        var selClass = $(this).attr('id').replace('Button', '');
+
+        datatypes.filter(".courseBox[data-location='" + selClass + "']").show();
+    });
+});
+
+
+var jobs=false, projects=false, studies=false, hack=false;
+
+var key = function(obj){
+  // some unique object-dependent key
+  return obj.totallyUniqueEmployeeIdKey; // just an example
+};
+
+function toggleDisplay(key){
+	window[key] = window[key] ? false : true;
 	projects ? toggleFilter("projects",true) : toggleFilter("projects",false);
 	jobs ? toggleFilter("jobs",true) : toggleFilter("jobs",false);
 	studies ? toggleFilter("studies",true) : toggleFilter("studies",false);
+	hack ? toggleFilter("hack",true) : toggleFilter("hack",false);
 }
 
-function toggleFilter(c,change) {
+function toggleFilter(c,show) {
+    document.getElementById(c.concat("Filter")).style.opacity = show ? 1 : 0.5;
 	var elems = document.getElementsByClassName(c);
 	for(var j = 0; j != elems.length; ++j){
-		elems[j].style.display = change ? "inline" : "none";
+		elems[j].style.display = show ? "inline" : "none";
 	}
 }
-/*Jobs
- function showJobs(){
-
- }
- function hideJobs(){
- var elems = document.getElementsByClassName('jobs');
- for(var i = 0; i != elems.length; ++i){
- elems[i].style.display = "none";
- }
- }
-
- Projects
- function showProjects(){
- var elems = document.getElementsByClassName('projects');
- for(var i = 0; i != elems.length; ++i){
- elems[i].style.display = "inline";
- }
- }
- function hideProjects(){
- var elems = document.getElementsByClassName('projects');
- for(var i = 0; i != elems.length; ++i){
- elems[i].style.display = "none";
- }
- }
-
- /*Studies
- function showStudies(){
- var elems = document.getElementsByClassName('studies');
- for(var i = 0; i != elems.length; ++i){
- elems[i].style.display = "inline";
- }
- }
- function hideStudies(){
- var elems = document.getElementsByClassName('studies');
- for(var i = 0; i != elems.length; ++i){
- elems[i].style.display = "none";
- }
- }*/
-
 
 /** NextImage function*/
 
