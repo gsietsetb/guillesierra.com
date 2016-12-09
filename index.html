@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-
 <html>
 <head>
     <title>Guillermo Sierra</title>
@@ -10,7 +9,7 @@
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="https://guillesierra.com/assets/img/Sierra-circleS.jpg">
     <meta property="og:image:secure_url" content="https://guillesierra.com/assets/img/Sierra-circleS.jpg"/>
-    <meta property="og:description" content="Telecommunication Engineer and Passionate traveller" />
+    <meta property="og:description" content="Telecommunication Engineer. CEO anf Founder at SeenGotIt" />
     <meta property="og:url" content="https://guillesierra.com/">
     <meta name="description" content="Guillermo Sierra, Telecommunication Engineer">
     <meta name="author" content="Guillermo Sierra">
@@ -29,7 +28,7 @@
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
 </head>
-<body onload="startTimer()">
+<body onload="startTimer(); initializeClock('clockdiv', deadline);">
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -47,7 +46,7 @@ position: fixed;
 	z-index: -999999;
 	left:0;
 	background-size: cover;
-    background: #464646 url('assets/img/bgnd.jpg') no-repeat fixed center center;
+    background: #464646 url('assets/img/keyboard.jpg') no-repeat fixed center center;
 	width: 100%;
 	height: 100%;">
 </div>
@@ -63,9 +62,9 @@ position: fixed;
         </h1>
         <nav class="links">
             <ul>
-                <li><a href="#instagotit">
-					<span><img src="assets/img/instagot2.png" width="30" height="30" alt="instagotit">
-						<p>instagotit</p></span>
+                <li><a href="#seengotit">
+					<span><img src="assets/img/instagot2.png" width="30" height="30" alt="seengotit">
+						<p>seengotit</p></span>
                 </a></li>
                 <li><a href="#mindstormer">
                     <span><img src="assets/img/brainstorm.jpg" width="30" height="30" alt="mindstorm"></span>
@@ -150,9 +149,9 @@ position: fixed;
     <section id="menu">
         <section>
             <ul class="links">
-                <li><a href="#instagotit">
-                    <img src="assets/img/instagot2.png" width="30" height="30" alt="instagotit">
-                    <h3 style="display:inline;">Instagot.it</h3>
+                <li><a href="#seengotit">
+                    <img src="assets/img/instagot2.png" width="30" height="30" alt="seengotit">
+                    <h3 style="display:inline;">Seengot.it</h3>
                     <p>Visual search engine</p>
                 </a></li>
                 <li><a href="#mindstormer">
@@ -234,124 +233,40 @@ position: fixed;
 
     <!-- Main -->
     <div id="main">
-        <h3>filter by: </h3>
-        <h2>
-            <table>
-                <tr style="border: none">
-                    <td>
-                        <a href="#" onclick="toggleDisplay('jobs')" id="jobsFilter">
-                            <img src="assets/img/wooden/Developer.png" alt="" width="60" height="60"/>
-                            <h2>Jobs</h2>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" onclick="toggleDisplay('projects')" id="projectsFilter">
-                            <img src="assets/img/project.png" alt="" width="60" height="60"/>
-                            <h2>Projects</h2>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" onclick="toggleDisplay('studies')" id="studiesFilter">
-                            <img src="assets/img/wooden/Library.png" alt="" width="60" height="60"/>
-                            <h2>Studies</h2>
-                        </a>
-                    </td>
-                    <td>
-                        <a href="#" onclick="toggleDisplay('hacks')" id="hacksFilter">
-                            <img src="assets/img/second.png" alt="" width="60" height="60"/>
-                            <h2>Hackathons</h2>
-                        </a>
+
+        <h1 style="margin-bottom:0;text-transform: none; font-size: xx-large; color: steelblue">
+            <table >
+                <tr>
+                    <td >
+                        <a href="#seengotit">#TheNextBigThink</a>    <div id="clockdiv">
+                        <div class="days"></div><p style="color: steelblue; display: inline">D</p>
+                        <div class="hours"></div><p style="color: steelblue; display: inline">H</p>
+                        <div class="minutes"></div><p style="color: steelblue; display: inline">M</p>
+                        <div class="seconds"></div><p style="color: steelblue; display: inline">S</p>
+                        <!--<div class="miliseconds"></div><p style="color: steelblue; display: inline">ms</p>-->
+                    </div>
                     </td>
                 </tr>
             </table>
-        </h2>
-        <h3>Or by skills: </h3>
-        <table>
-            <tr style="border: none">
-                <td>
-                    <a href="#" onclick="toggleJ()">
-                        <img src="assets/img/c-prog.png" />
-                        <h4>C</h4>
-                    </a>
-                </td>
-                <td>
-                    <a href="#" onclick="toggleJ()">
-                        <img src="assets/img/visual.png" />
-                        <h4>basic</h4>
-                    </a>
-                </td>
-                <td style="text-align: center; ">
-                    <a href="#" onclick="toggleJ()">
-                        <img src="assets/img/embed.png" />
-                        <h4>Embed</h4>
-                    </a>
-                </td>
-                <td style="text-align: center; ">
-                    <a href="#" onclick="toggleJ()">
-                        <img src="assets/img/iot.png" />
-                        <h4>IoT</h4>
-                    </a>
-                </td>
-                <td >
-                    <a href="#" onclick="toggleJ()">
-                        <img src="assets/img/c++.png" />
-                        <h4>C++</h4>
-                    </a>
-                </td>
-                <td >
-                    <a href="#" onclick="toggleJ()">
-                        <img src="assets/img/java.ico" />
-                        <h4>Java</h4>
-                    </a>
-                </td>
-                <td >
-                    <a href="#" onclick="toggleJ()">
-                        <img src="assets/img/android.ico" />
-                        <h4>Android</h4>
-                    </a>
-                </td>
+            <div style="text-align: center; margin-top: 1em" >
+                <img  src="assets/img/launch-website.png" height="130" width="530"/>
+            </div>
+        </h1>
 
-                <td >
-                    <a href="#" onclick="toggleJ()">
-                        <img src="assets/img/skills-jquery.svg" />
-                        <h4>jQuery</h4>
-                    </a>
-                </td>
-                <td >
-                    <a href="#" onclick="toggleJ()">
-                        <img src="assets/img/js.png" />
-                        <h4>JS</h4>
-                    </a>
-                </td>
-                <td >
-                    <a href="#" onclick="toggleJ()">
-                        <img src="assets/img/php.png" />
-                        <h4>Php</h4>
-                    </a>
-                </td>
-                <td >
-                    <a href="#" onclick="toggleJ()">
-                        <img src="assets/img/ros2.png" />
-                        <h4>Ros</h4>
-                    </a>
-                </td>
-                <td >
-                    <a href="#" onclick="toggleJ()">
-                        <img src="assets/img/skills-git.svg" />
-                        <h4>Git</h4>
-                    </a>
-                </td>
-
-            </tr>
-        </table>
-
-        <!-- instagotit -->
-        <article class="post projects" id="instagotit">
+        <!-- seengotit -->
+        <article class="post projects" id="seengotit">
             <!--style="background: #464646 url('assets/img/project.png') no-repeat fixed center center">-->
             <header >
                 <div class="title">
-                    <h2><img src="assets/img/instagot2.png" alt="" data-position="center center" width="65px" height="65px"/></span>
-                        <a style="display: inline" href="#">instagot.it</a></h2>
+                    <img src="assets/img/instagot2.png" alt="" data-position="center center" width="65px" height="65px"/></span>
+                    <h1 style="display: inline; text-transform: none; font-size: xx-large; font-weight: 800; letter-spacing: 0.1em;color: steelblue">
+                        <a href="#seengotit" style="font-family: Ver">Seen, Got It</a>
+                    </h1>
+                    <h2>
+                        <a style="display: inline; text-transform: none; font-family: times; font-size: x-large" href="#">
+                            You Want it, you Got It!</a>
+                    </h2>
+                    <h3 style="color: steelblue;"><img src="assets/img/launch.ico" height="40" width="40"/>Launch:<img src="assets/img/playStore.png" height="40" width="40"/> <b>1st Jan! </b></h3>
                     <p>Visual search engine</p>
                 </div>
                 <div class="meta">
@@ -362,7 +277,7 @@ position: fixed;
                     <a href="#" class="skill skill-android"><span class="name">Git</span><img src="assets/img/skills-git.svg" alt="" /></a>
                 </div>
             </header>
-            <a href="#instagotit" class="image featured">
+            <a href="#seengotit" class="image featured">
                 <img id="imgSwitcher" onclick="displayNextImageInsta()" src="assets/img/imgRecog2.jpg" alt="" />
             </a>
             <p>Visual search engine which is able to match a picture with a catalog providing a powerful purchase comparator platform</p>
@@ -584,10 +499,13 @@ position: fixed;
 
         <!-- Intro -->
         <section id="intro" >
-            <a href="#" class="logo"><img src="assets/img/Sierra.jpg" alt="" /></a>
+            <a href="#" class="logo"><img src="assets/img/SIERRA_formal.jpg" width="130px" height="130px" alt="" /></a>
             <header>
                 <h2>Guillermo Sierra Aiello</h2>
-                <p>Telecommunication Engineer and Passionate Traveller</p>
+                <p>Telecommunication Engineer and Passionate Traveller<br>
+                    <b>CEO and Founder at SeenGotIt</b>
+                </p>
+                <h4></h4>
                 <section id="footer">
                     <ul class="icons">
                         <li><a href="assets/file/RESUME_Guillermo_Sierra.pdf" class="fa-file-pdf-o"><span class="label">Resume</span></a></li>
@@ -600,19 +518,126 @@ position: fixed;
             </header>
         </section>
 
-
         <!-- Mini Posts -->
         <section class="hacks">
-            <h2>
+            <div class="filter">
+                <h2>Filter by: </h2>
+                <h2 >
+                    <table>
+                        <tr style="border: none">
+                            <td>
+                                <a href="#" onclick="toggleDisplay('jobs')" id="jobsFilter">
+                                    <img src="assets/img/wooden/Developer.png" alt="" width="40" height="40"/>
+                                    <h4 style="color: steelblue ">Jobs</h4>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" onclick="toggleDisplay('projects')" id="projectsFilter">
+                                    <img src="assets/img/project.png" alt="" width="40" height="40"/>
+                                    <h4  style="color: steelblue ">Projects</h4>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" onclick="toggleDisplay('studies')" id="studiesFilter">
+                                    <img src="assets/img/wooden/Library.png" alt="" width="40" height="40"/>
+                                    <h4  style="color: steelblue ">Studies</h4>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="#" onclick="toggleDisplay('hacks')" id="hacksFilter">
+                                    <img src="assets/img/second.png" alt="" width="40" height="40"/>
+                                    <h4  style="color: steelblue ">Hackathons</h4>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </h2>
+
+                <h2>Or by Skills: </h2>
+                <table>
+                    <tr style="border: none">
+                        <td>
+                            <a href="#" onclick="toggleJ()">
+                                <img src="assets/img/c-prog.png" />
+                                C
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#" onclick="toggleJ()">
+                                <img src="assets/img/visual.png" />
+                                Basic
+                            </a>
+                        </td>
+                        <td style="text-align: center; ">
+                            <a href="#" onclick="toggleJ()">
+                                <img src="assets/img/embed.png" />
+                                Emb
+                            </a>
+                        </td>
+                        <td style="text-align: center; ">
+                            <a href="#" onclick="toggleJ()">
+                                <img src="assets/img/iot.png" />
+                                IoT
+                            </a>
+                        </td>
+                        <td >
+                            <a href="#" onclick="toggleJ()">
+                                <img src="assets/img/c++.png" />
+                                C++
+                            </a>
+                        </td>
+                        <td >
+                            <a href="#" onclick="toggleJ()">
+                                <img src="assets/img/java.ico" />
+                                Java
+                            </a>
+                        </td>
+                        <td >
+                            <a href="#" onclick="toggleJ()">
+                                <img src="assets/img/android.ico" />
+                                Andr
+                            </a>
+                        </td>
+
+                        <td >
+                            <a href="#" onclick="toggleJ()">
+                                <img src="assets/img/skills-jquery.svg" />
+                                jQry
+                            </a>
+                        </td>
+                        <td >
+                            <a href="#" onclick="toggleJ()">
+                                <img src="assets/img/js.png" />
+                                JS
+                            </a>
+                        </td>
+                        <td >
+                            <a href="#" onclick="toggleJ()">
+                                <img src="assets/img/php.png" />
+                                Php
+                            </a>
+                        </td>
+                        <td >
+                            <a href="#" onclick="toggleJ()">
+                                <img src="assets/img/skills-git.svg" />
+                                Git
+                            </a>
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <h2 style="letter-spacing: 0.18em">
                 <img src="assets/img/second.png" alt="" width="60" height="60"/>
-                Hackathons and Challenges</h2>
+                Hackathons, Conf...</h2>
             <div class="mini-posts">
                 <!-- Mini Post -->
                 <article class="mini-post" id="MWC">
                     <header>
                         <h3>
                             <img src="assets/img/gsma.png" width="30" height="30"  >
-                            <a href="#">Mobile World Congress 2016</a></h3>
+                            <a href="#">Mobile World Congress <br> 2016</a></h3>
                         <time class="published" datetime="2015-10-20"><img src="assets/img/sp.png" width="30" height="22">Barcelona - Feb '15</time>
                         <a href="#" class="skill"><img src="assets/img/android.ico" alt="" />
                             <img src="assets/img/iot.png" alt="" /></a>
@@ -634,7 +659,7 @@ position: fixed;
                             <img src="assets/img/embed.png" alt="" />
                             <img src="assets/img/iot.png" alt="" /></a>
                     </header>
-                    <a href="#" class="image"><img src="assets/img/intelHack2.png" alt="" /></a>
+                    <a href="#" class="image"><img src="assets/img/intelHack2.jpg" alt="" /></a>
                 </article>
 
                 <!-- Mini Post -->
@@ -659,7 +684,7 @@ position: fixed;
                     <header>
                         <h3>
                             <img src="assets/img/telefonica.png" width="30" height="30"  >
-                            <a href="#">ThinkBig Telefonica 2014</a></h3>
+                            <a href="#">ThinkBig Telefonica <br>2014</a></h3>
                         SmartCities challenge organized by Telefonica. <a>ThirdEye</a>: SmartBike idea presented and promted to National Enterpreneurship challenge.
                         <time class="published" datetime="2015-10-20"><img src="assets/img/sp.png" width="30" height="22"> Barcelona - Mar '15</time>
                         <a href="#" class="skill">

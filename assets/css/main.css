@@ -1530,10 +1530,15 @@ h1, h2, h3, h4, h5, h6 {
 	color: #3c3b3b;
 	font-family: "Raleway", Helvetica, sans-serif;
 	font-weight: 800;
-	letter-spacing: 0.25em;
+	letter-spacing: 0.15em;
 	line-height: 1.65;
 	margin: 0 0 1em 0;
+	/*text-transform: uppercase;*/
+}
+
+h1, h2 {
 	text-transform: uppercase;
+	letter-spacing: 0.25em;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2984,7 +2989,7 @@ header p {
 }
 
 table {
-	margin: 0 0 0.1em 0;
+	/*margin: 0 0 0.1em 0;*/
 	width: 100%;
 }
 
@@ -3000,7 +3005,7 @@ table tbody tr:nth-child(2n + 1) {
 }
 
 table td {
-	padding: 0.15em 0.15em;
+	/*padding: 0.15em 0.15em;*/
 }
 table td a {
 	border: none;
@@ -3008,16 +3013,16 @@ table td a {
 
 table td a img{
 	margin: 0;
-	width: 45px;
-	height: 45px;
+	width: 25px;
+	height: 25px;
 	/*background-image: url(../img/woodTransp.png);*/
 }
 
 table th {
 	color: #3c3b3b;
-	font-size: 0.9em;
-	font-weight: 700;
-	padding: 0 0.75em 0.75em 0.75em;
+	font-size: 0.1em;
+	font-weight: 300;
+	padding: 0 0.25em 0.25em 0.25em;
 	text-align: left;
 }
 
@@ -3275,11 +3280,11 @@ body {
 	-webkit-transition: opacity 0.5s ease;
 	-ms-transition: opacity 0.5s ease;
 	transition: opacity 0.5s ease;
-	margin: 0 auto;
+	margin: 2em auto;
 	max-width: 100%;
 	opacity: 1;
-	padding: 4.5em;
-	width: 90em;
+	padding: 0;/*4.5em;*/
+	width: 95em;
 	/*background-image: url("../../img/singSkyline.jpg");*/
 	/*background-color: steelblue;*/
 }
@@ -3369,7 +3374,7 @@ body.single #wrapper {
 	margin: 0 0 1em 0;
 	overflow: hidden;
 	position: relative;
-	width: 4em;
+	/*width: 4em;*/
 }
 
 #intro .logo:before {
@@ -3389,7 +3394,7 @@ body.single #wrapper {
 #intro .logo img {
 	display: block;
 	margin-left: -0.25em;
-	width: 4.5em;
+	/*width: 4.5em;*/
 }
 
 #intro header h2 {
@@ -3563,8 +3568,24 @@ body.is-menu-visible #menu {
 }
 
 skills {
-	background: #464646 url('assets/img/wood1.jpg') no-repeat fixed center center;
+	background: #464646 url('../img/wood1.jpg') no-repeat fixed center center;
 	display: inline;
+}
+
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+	padding: 4px;
+	border-radius: 2px;
+	background: steelblue;
+	display: inline-block;
 }
 
 
