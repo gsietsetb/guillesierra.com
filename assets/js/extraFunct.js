@@ -47,29 +47,36 @@ function toggleFilter(c,show) {
 
 /** NextImage function*/
 
-var i=1, b=1;
-function displayNextImageInsta() {
-	var src= "assets/img/imgRecog".concat(i).concat(".jpg");
-//					alert(src);
-	document.getElementById("imgSwitcher").src = src;
+var i=1;
+function displayNextImageGot() {
+	var srcGot= "assets/img/imgRecog".concat(i).concat(".jpg");
+	document.getElementById("imgSwitcher").src = srcGot;
 	if(i++>=4){
 		i=1;
 	}
-}
 
+}
+var n=1;
+function displayNextIco() {
+	var srcIco= "assets/img/sierraIco".concat(++n).concat(".jpg");
+	// alert(srcIco);
+	document.getElementById("icoSwitch").src = srcIco;
+	if(n>=5){
+		n=1;
+	}
+}
+var b=1;
 function displayNextImageCubecat() {
 	b == 1 ? b=3 : b=1;
-	// if(b==1)
-	// 	b=3;
-	// else
-	// 	b=1;
-	var src= "assets/img/nanosatlab_slideshow_0".concat(b).concat(".jpg");
-	document.getElementById("imgSwitcherCubecat").src = src;
+	var srcCube= "assets/img/nanosatlab_slideshow_0".concat(b).concat(".jpg");
+	document.getElementById("imgSwitcherCubecat").src = srcCube;
 }
 
 function startTimer() {
-	setInterval(displayNextImageInsta, 4000);
+	setInterval(displayNextImageGot, 4000);
 	setInterval(displayNextImageCubecat, 5000);
+    setInterval(displayNextIco, 5000);
+
 }
 
 function getTimeRemaining(endtime) {
