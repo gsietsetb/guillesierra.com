@@ -75,7 +75,7 @@ function displayNextImageCubecat() {
 function startTimer() {
 	setInterval(displayNextImageGot, 4000);
 	setInterval(displayNextImageCubecat, 5000);
-    setInterval(displayNextIco, 5000);
+    // setInterval(displayNextIco, 5000);
 
 }
 

@@ -17,20 +17,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-    /*!* Location of the image *!*/
-    /*!* Background image is centered vertically and horizontally at all times *!*/
-    /*!* Background image doesn't tile *!*/
-    /*!* Background image is fixed in the viewport so that it doesn't move when*/
-       /*the content's height is greater than the image's height *!*/
-    /*!* This is what makes the background image rescale based*/
-       /*on the container's size *!*/
-    /*background-size: cover;*/
+	/*!* Location of the image *!*/
+	/*!* Background image is centered vertically and horizontally at all times *!*/
+	/*!* Background image doesn't tile *!*/
+	/*!* Background image is fixed in the viewport so that it doesn't move when*/
+	/*the content's height is greater than the image's height *!*/
+	/*!* This is what makes the background image rescale based*/
+	/*on the container's size *!*/
+	/*background-size: cover;*/
 
-    /*!* Set a background color that will be displayed*/
-       /*while the background image is loading *!*/
-    /*background: #dedede url('img/bcgrnd.jpg') no-repeat fixed center center;*/
-    /*!*line-height: 1;*!*/
-    /*background-size: cover;*/
+	/*!* Set a background color that will be displayed*/
+	/*while the background image is loading *!*/
+	/*background: #dedede url('img/bcgrnd.jpg') no-repeat fixed center center;*/
+	/*!*line-height: 1;*!*/
+	/*background-size: cover;*/
 	/*background: #464646 url(../img/bgnd.jpg) no-repeat fixed center center op;*/
 }
 
@@ -1663,7 +1663,7 @@ hr.major {
 }
 
 .skill img {
-	border-radius: 100%;
+	/*border-radius: 100%;*/
 	display: block;
 	width: 4em;
 }
@@ -2591,18 +2591,24 @@ dl dd {
 .post {
 	padding: 1em 1em 0.4em 1em ;
 	margin: 0 0 3em 0;
-	border-top: dotted burlywood;
+	border: dotted steelblue;
 	position: relative;
+	background-color: rgba(20,25,61,0.11);
 	/*background: #ffffff;*/
 	/*background: url("/assets/img/wood-blue.jpg");*/
 	/*background-size: cover;*/
 	/*background: -webkit-gradient(linear-gradient()to right, gray, transparent );*/
 	/*background: url(../img/wood5.jpg) no-repeat fixed center center;*/
-	background: rgb(255,255,255); /* Old browsers */
-	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+	/*background: rgb(255,255,255); !* Old browsers *!*/
+	/*background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%); !* FF3.6-15 *!*/
+	/*background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); !* Chrome10-25,Safari5.1-6 *!*/
+	/*background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); !* IE6-9 *!*/
+}
+
+.post > img{
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .post > header {
@@ -2626,6 +2632,10 @@ dl dd {
 	padding: 1.75em 1em 1.3em 1em;
 }
 
+.post > header .title img{
+	vertical-align: middle;
+}
+
 .post > header .title h2 {
 	font-weight: 900;
 	font-size: 1.5em;
@@ -2646,7 +2656,7 @@ dl dd {
 
 .post > header .title {
 	-ms-flex: 0 1 auto;
-	margin: 0 0 2em 0;
+	margin: 0 0 1.5em 0;
 	padding: 0;
 	text-align: center;
 }
@@ -2889,28 +2899,55 @@ dl dd {
 @media screen and (max-width: 736px) {
 
 	.post {
-		padding: 1.5em 1.5em 0.1em 1.5em ;
-		left: -1.5em;
+		padding: 0 ;
+		left: 0em;
+		right: 0em;
 		margin: 0 0 2em 0;
-		width: calc(100% + (1.5em * 2));
+		/*width: calc(100% - (1.5em * 2));*/
+		width: 100%;
 	}
 
 	.post > header {
 		padding: 1em 1.5em 0.5em 1.5em ;
-		left: -1.5em;
-		margin: -1.5em 0 1.5em 0;
-		width: calc(100% + 3em);
+		left: 0;
+		margin: -0.5em 0 0.5em 0;
+		width: 100%;
 	}
 
 	.post > header .title h2 {
-		font-size: 1.1em;
+		font-size: medium;
 	}
 
 }
 
 @media screen and (max-width: 480px) {
 
+	/*.gplay > img{*/
+	/*width: 60px;*/
+	/*height: 40px;*/
+	/*}*/
+
+	/*.tplay > img{*/
+	/*width: 24px;*/
+	/*height: 24px;*/
+	/*}*/
+
+	/*.wrapper {*/
+	/*margin: 0;*/
+	/*}*/
+
+	.post > header {
+		margin: 0;
+	}
+
+	.post > header .title {
+		margin: 0;
+	}
+
+
+
 	.post > header .meta {
+		display: none;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -2922,8 +2959,10 @@ dl dd {
 	}
 
 	.post > header .meta > * {
+		height: 0em;
+		display: none;
 		border-left: 0;
-		margin: 1em 0 0 0;
+		margin: 0 0 0 0;
 		padding-left: 0;
 	}
 
@@ -2932,9 +2971,9 @@ dl dd {
 	}
 
 	.post > .image.featured {
-		margin-left: -1.5em;
-		margin-top: calc(-1.5em - 1px);
-		width: calc(100% + 3em);
+		margin-left: 0;
+		margin-top: 0;
+		width: 100%;
 	}
 
 	.post > footer {
@@ -2955,6 +2994,14 @@ dl dd {
 	.post > footer .stats li {
 		margin: 0 0 0 1.25em;
 		padding: 0 0 0 1.25em;
+	}
+
+	.forkme{
+		display: none;
+	}
+
+	.meta{
+		display: none;
 	}
 
 }
@@ -3244,9 +3291,12 @@ body {
 
 @media screen and (max-width: 736px) {
 
+
 	#header {
 		height: 2.75em;
 		line-height: 2.75em;
+		/*overflow-x: hidden;*/
+		/*width: 70%;*/
 	}
 
 	#header h1 {
@@ -3306,7 +3356,7 @@ body.is-menu-visible #wrapper {
 @media screen and (max-width: 736px) {
 
 	#wrapper {
-		padding: 1.5em;
+		padding: 0em;
 	}
 
 }
@@ -3429,7 +3479,7 @@ body.single #wrapper {
 	}
 
 	#intro .logo {
-		margin: 0 0 0.5em 0;
+		margin: 0 0 2.5em 0;
 	}
 
 	#intro header h2 {
@@ -3553,16 +3603,115 @@ body.is-menu-visible #menu {
 	visibility: visible;
 }
 
+@media screen and (max-width: 906px) {
+
+	/*#header .links .presci{*/
+	/*display: none;*/
+	/*}*/
+}
+
 @media screen and (max-width: 736px) {
+
+	.toMin {
+		width: 300px;
+		height: 60px;
+		font-size: small;
+		display: inline;
+		/*#clockdiv{*/
+		/*font-family: sans-serif;*/
+		/*color: #fff;*/
+		/*display: inline-block;*/
+		/*font-weight: 100;*/
+		/*text-align: center;*/
+		/*font-size: 20px;*/
+		/*}*/
+
+		/*#clockdiv > div{*/
+		/*padding: 1px;*/
+		/*border-radius: 1px;*/
+		/*background: steelblue;*/
+		/*display: inline-block;*/
+		/*}*/
+	}
+
+	#header .links {
+		margin-left: 0.2em;
+		padding-left: 0.2em;
+	}
+
+	#header .links ul li {
+		margin-left: 0.2em;
+		padding-left: 0.2em;
+	}
+
+	/*#header .menu {*/
+		/*display: none;*/
+	/*}*/
 
 	#menu > * {
 		padding: 1.5em;
 	}
 
+	#header .main .search {
+		display: none;
+	}
+
+	#wrapper > header > h1 {
+		display: none;
+	}
+
+
+	#clockdiv{
+		display: block;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	#intro {
+		margin: -2em 0 0 0 ;
+		padding: 0;
+	}
+
+	p {
+		margin: 0.3em;
+	}
+
+	#header .title {
+		font-size: 20%;
+	}
+
+	#header .links .presci{
+		display: none;
+	}
+
+	.toMin {
+		width: 300px;
+		height: 60px;
+		font-size: small;
+		display: inline;
+
+	#clockdiv{
+		font-family: sans-serif;
+		color: #fff;
+		display: inline-block;
+		font-weight: 100;
+		text-align: center;
+		font-size: 20px;
+	}
+
+	#clockdiv > div{
+		padding: 1px;
+		border-radius: 1px;
+		background: steelblue;
+		display: inline-block;
+	}
+}
 }
 
 skills {
-	background: #464646 url('../img/wood1.jpg') no-repeat fixed center center;
+	/*background: #464646 url('../img/wood1.jpg') no-repeat fixed center center;*/
 	display: inline;
 }
 
@@ -3572,7 +3721,7 @@ skills {
 	display: inline-block;
 	font-weight: 100;
 	text-align: center;
-	font-size: 30px;
+	/*font-size: 30px;*/
 }
 
 #clockdiv > div{
