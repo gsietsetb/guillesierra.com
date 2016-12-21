@@ -3606,7 +3606,7 @@ body.is-menu-visible #menu {
 		height: 30px;
 	}
 
-	.toMinWide{  /*For the Launcher*/
+	.toMinWide {  /*For the Launcher*/
 		width: 300px;
 		height: 80px;
 	}
@@ -3667,6 +3667,12 @@ body.is-menu-visible #menu {
 		width: 120px;
 		height: 120px;
 	}
+
+	.toMinWide {  /*For the Launcher*/
+		width: 300px;
+		height: 80px;
+	}
+
 
 	.toMinH2{  /*For Subtitle want it, got it*/
 		font-size: smaller;
