@@ -1446,9 +1446,9 @@ body, input, select, textarea {
 		font-size: 12pt;
 	}
 
-	.spaced{
-		display: none;
-	}
+	/*.spaced{*/
+		/*display: none;*/
+	/*}*/
 
 }
 
@@ -3591,19 +3591,50 @@ body.is-menu-visible #menu {
 	visibility: visible;
 }
 
+#clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+}
+
+#clockdiv > div{
+	padding: 4px;
+	display: inline-block;
+	background: rgba(70, 130, 180, 0.32);
+	border-radius: 20%;
+}
+
+
+@media screen and (max-width: 980px) {
+
+	.post > header .meta .skill .name {
+		display: none;
+	}
+}
+
 @media screen and (max-width: 736px) {
 
 	.toMinHt{  /*For the Hashtag*/
 		font-size: smaller;
 	}
 
-	.spaced{
-		display: block;
-	}
+	/*.spaced{*/
+		/*display: block;*/
+	/*}*/
 
 	.toMinHt img{  /*For the Hashtag imgs*/
 		width: 30px;
 		height: 30px;
+	}
+
+	.toMin {   /*For ShotGot Icons*/
+		width: 40px;
+		height: 40px;
+		vertical-align: -20%;
+		font-size: small;
+		display: inline;
 	}
 
 	.toMinWide {  /*For the Launcher*/
@@ -3613,14 +3644,6 @@ body.is-menu-visible #menu {
 
 	.forkme{
 		display: none;
-	}
-
-	.toMin {   /*For ShotGot Icons*/
-		width: 40px;
-		height: 40px;
-		vertical-align: -20%;
-		font-size: small;
-		display: inline;
 	}
 
 	#header .links {
@@ -3673,7 +3696,6 @@ body.is-menu-visible #menu {
 		height: 80px;
 	}
 
-
 	.toMinH2{  /*For Subtitle want it, got it*/
 		font-size: smaller;
 	}
@@ -3698,39 +3720,10 @@ body.is-menu-visible #menu {
 	}
 
 	#clockdiv{
-		font-family: sans-serif;
-		color: #fff;
-		display: inline-block;
-		font-weight: 100;
-		text-align: center;
 		font-size: 14px;
 	}
 
 	#clockdiv > div{
 		padding: 1px;
-		border-radius: 1px;
-		background: steelblue;
-		display: inline-block;
 	}
-}
-
-skills {
-	/*background: #464646 url('../img/wood1.jpg') no-repeat fixed center center;*/
-	display: inline;
-}
-
-#clockdiv{
-	font-family: sans-serif;
-	color: #fff;
-	display: inline-block;
-	font-weight: 100;
-	text-align: center;
-	/*font-size: 30px;*/
-}
-
-#clockdiv > div{
-	padding: 4px;
-	border-radius: 2px;
-	background: steelblue;
-	display: inline-block;
 }
