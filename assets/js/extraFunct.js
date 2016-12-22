@@ -54,8 +54,18 @@ function displayNextImageGot() {
 	if(i++>=4){
 		i=1;
 	}
-
 }
+
+var r=1;
+function displayNextImageShot() {
+    var srcShot= "assets/img/glamGot".concat(r).concat(".png");
+    document.getElementById("ShotSwitcher").src = srcShot;
+    if(r++>=6){
+        r=1;
+    }
+}
+
+
 var n=1;
 function displayNextIco() {
 	var srcIco= "assets/img/sierraIco".concat(++n).concat(".jpg");
@@ -75,8 +85,8 @@ function displayNextImageCubecat() {
 function startTimer() {
 	setInterval(displayNextImageGot, 4000);
 	setInterval(displayNextImageCubecat, 5000);
+	// setInterval(displayNextImageShot, 1000);
     // setInterval(displayNextIco, 5000);
-
 }
 
 function getTimeRemaining(endtime) {
