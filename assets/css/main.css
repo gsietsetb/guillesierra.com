@@ -3682,8 +3682,17 @@ body.is-menu-visible #menu {
 		padding: 0;
 	}
 
+	.gplay{
+		height: 40px;
+		width: 150px;
+	}
+
 	p {
 		margin: 0.3em;
+	}
+
+	.toMinHt{  /*For the Hashtag*/
+		font-size: x-small;
 	}
 
 	.toMinIco{
