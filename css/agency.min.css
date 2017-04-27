@@ -12,3 +12,19 @@ button.tip {
     height: 100px;
     width: 100px;
 }
+
+img.mainPic {
+    height: 15vh;
+    float: left;
+    border: double 4px #8a6d3b;
+}
+
+@media (max-width:768px){
+    img.mainPic {
+        float: none;
+        margin-bottom: 4vh;
+        display: inline;
+    }
+
+}
+
