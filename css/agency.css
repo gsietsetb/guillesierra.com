@@ -542,6 +542,10 @@ section h3.section-subheading {
     font-style: normal;
 }
 
+.timeline .timeline-body {
+    display: none;
+}
+
 .timeline .timeline-body > p,
 .timeline .timeline-body > ul {
     margin-bottom: 0;
@@ -611,6 +615,11 @@ section h3.section-subheading {
 }
 
 @media (min-width: 1200px) {
+    .timeline .timeline-body {
+        display: inline;
+    }
+
+
     .timeline > li {
         min-height: 170px;
     }
