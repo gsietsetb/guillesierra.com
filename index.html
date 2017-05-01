@@ -15,11 +15,11 @@
     <!--OG share -->
     <meta property="og:title" content="Guillermo Sierra" />
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="https://guillesierra.com/img/team/gSierra_s.jpg">
-    <meta property="og:image:secure_url" content="https://guillesierra.com/img/team/gSierra_s.jpg"/>
+    <meta property="og:image" content="https://guillesierra.com/img/team/gSierra_m.jpg">
+    <meta property="og:image:secure_url" content="https://guillesierra.com/img/team/gSierra_m.jpg"/>
     <meta property="og:description"
           content="Founder and CEO at https://www.shotgot.com/ and https://www.autoqe.com/. Telecommunication Engineer."/>
-    <meta property="og:favicon" content="https://guillesierra.com/img/team/gSierra_s.jpg">
+    <meta property="og:favicon" content="https://guillesierra.com/img/team/gSierra_m.jpg">
     <meta property="og:url" content="https://guillesierra.com/">
 
     <link rel="shortcut icon" href="img/team/gSierra.jpg">
@@ -256,15 +256,25 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <button class=" tip" onclick="toggleInfo()">
-                    <br>Show more <br>details:
-                    <br>
-                    <img id="toggle" src="img/icons/arrow.png" height="32"></button>
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <h2 class="section-heading">About</h2>
                 <h3 class="section-subheading text-muted">
                     Find below some of my lifetime stages...
+                    <hr>
+                    <button class="" style="margin-top: 5px;background: transparent;border-radius: 5%" type="button"
+                            onclick="toggleInfo()">
+                        <i style="color: black" class="fa fa-bars"></i>
+                        Click the icons below to show more details:
+                        <img id="toggle-arrow" src="img/icons/arrow.png" height="32">
+                    </button>
                 </h3>
-
                 <script>
                     var disp = true;
                     function toggleInfo() {
@@ -272,7 +282,7 @@
                         for (var i = 0; i < elems.length; i++) {
                             elems[i].style.display = disp ? 'inline' : 'none';
                         }
-                        document.getElementById("toggle").src = disp ? 'img/icons/arrow-d.png' : 'img/icons/arrow.png';
+                        document.getElementById("toggle-arrow").src = disp ? 'img/icons/arrow-d.png' : 'img/icons/arrow.png';
                         disp = !disp;
                     }
                 </script>
@@ -288,6 +298,8 @@
                             <a href="https://www.autoqe.com/">
                                 <img class="img-circle img-responsive" src="img/brands/autoqe_blur2.png" alt="">
                             </a>
+                        </div>
+                        <div>
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -328,7 +340,9 @@
                                 <h4> See it, Got it!</h4>
                                 <p> CEO and Founder</p>
                                 <h5 class="date">
-                                    <img src="img/country/world.png" class="img-rounded" height="32">
+                                    <!--<img src="img/country/world.png" class="img-rounded" height="32">-->
+                                    <img src="img/country/usa_round.png" class="img-rounded" height="32">
+                                    <!--<img src="img/country/eu-round.png" class="img-rounded" height="32">-->
                                     Nov '16</h5>
                             </div>
                             <hr>
@@ -425,8 +439,9 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <img src="img/icons/second.png" class="img-rounded" height="32" style="float: right">
-                                <h3 class="subheading"> HackEPFL 2015</h3>
+                                <h3 class="subheading"> HackEPFL 2015
+                                    <img src="img/icons/second.png" class="img-rounded" height="32"">
+                                </h3>
                                 <h4 class="subheading"> Facebook Hackathon at EPFL</h4>
                                 <h5 class="date">
                                     <img src="img/country/ch.png" class="img-rounded" height="32">
@@ -449,10 +464,10 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <img src="img/icons/study-black.png" class="img-rounded" height="32"
-                                     style="float: left">
+
                                 <!--<h3 class="subheading"> <br>Exchange project - EPFL</h3>-->
-                                <h3>Collaborative sensing on selfdriving cars</h3>
+                                <h3><img src="img/icons/study-black.png" class="img-rounded" height="32">
+                                    Collaborative sensing on selfdriving cars</h3>
                                 <h4>Exchange project at EPFL</h4>
                                 <h5 class="date"><img src="img/country/ch.png" class="img-rounded" height="32">
                                     Lausanne, Feb-Jun '15</h5>
@@ -474,11 +489,12 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <img src="img/icons/second.png" class="img-rounded" height="32" style="float: right">
-                                <h3 class="subheading"> ThinkBig 2014</h3>
+                                <h3 class="subheading"> ThinkBig 2014
+                                    <img src="img/icons/second.png" class="img-rounded" height="32">
+                                </h3>
                                 <h4 class="subheading"> Telefonica Smartcity Hackathon</h4>
                                 <h5 class="date">
-                                    <img src="img/country/sp.png" class="img-rounded" height="32">
+                                    <img src="img/country/eu-round.png" class="img-rounded" height="32">
                                     Bcn, 2010-'15</h5>
                             </div>
                             <hr>
@@ -498,11 +514,12 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <img src="img/icons/second.png" class="img-rounded" height="32" style="float: left">
-                                <h3 class="subheading"> Nanosatellite CUBESAT</h3>
+                                <h3 class="subheading">
+                                    <img src="img/icons/second.png" class="img-rounded" height="32">
+                                    Nanosatellite CUBESAT</h3>
                                 <h4 class="subheading"> GOOGLE award</h4>
                                 <h5 class="date">
-                                    <img src="img/country/sp.png" class="img-rounded" height="32">
+                                    <img src="img/country/eu-round.png" class="img-rounded" height="32">
                                     Bcn, Feb-Jun 2013</h5>
                             </div>
                             <hr>
@@ -533,9 +550,10 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <img src="img/icons/study-black.png" class="img-rounded" height="32"
-                                     style="float: right">
-                                <h3 class="subheading"> Telecommunication Engineering - UPC</h3>
+                                <h3 class="subheading">
+                                    <img src="img/icons/study-black.png" class="img-rounded" height="32">
+                                    Telecommunication Engineering - UPC
+                                </h3>
                                 <h5 class="date">
                                     <img src="img/country/sp.png" class="img-rounded" height="32">
                                     Bcn, 2010-'15</h5>
@@ -558,10 +576,12 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <img src="img/icons/second.png" class="img-rounded" height="32" style="float: left">
-                                <h3 class="subheading"> Robosumo UPC Challenge 2010</h3>
+                                <h3 class="subheading">
+                                    <img src="img/icons/second.png" class="img-rounded" height="32">
+                                    Robosumo UPC Challenge 2010
+                                </h3>
                                 <h5 class="date">
-                                    <img src="img/country/sp.png" class="img-rounded" height="32">
+                                    <img src="img/country/eu-round.png" class="img-rounded" height="32">
                                     Bcn, Jun '10</h5>
                             </div>
                             <hr>
@@ -581,7 +601,10 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h3 class="subheading"> Born!</h3>
+                                <h3 class="subheading">
+                                    Born
+                                    <img src="img/icons/startup.png" class="img-rounded" height="32">
+                                </h3>
                                 <h5 class="date">
                                     <img src="img/country/sp.png" class="img-rounded" height="32">
                                     Bcn, 9th Dec 1992</h5>
@@ -778,11 +801,34 @@
             </div>
             <div class="col-md-4">
                 <ul class="list-inline social-buttons">
-                    <li><a href="#"><i class="fa fa-twitter"></i></a>
+                    <li>
+                        <a href="file/RESUME_Guillermo_Sierra.pdf">
+                            <i class="fa fa-file-pdf-o"></i>
+                        </a>
                     </li>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a>
+                    <!--<li>-->
+                    <!--<a href="https://github.com/gsietsetb">-->
+                    <!--<i class="fa fa-phone"></i>-->
+                    <!--</a>-->
+                    <!--</li>-->
+                    <li>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gsierra@guillesierra.com">
+                            <i class="fa fa-envelope"></i>
+                        </a>
                     </li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                    <li>
+                        <a href="https://es.linkedin.com/in/sierraguillermo">
+                            <i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/gsietsetb">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/Telecos.MIT">
+                            <i class="fa fa-facebook"></i></a>
                     </li>
                 </ul>
             </div>

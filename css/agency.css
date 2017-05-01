@@ -575,6 +575,11 @@ section h3.section-subheading {
         margin-left: -50px;
     }
 
+    .timeline > li .timeline-toggle {
+        left: 50%;
+        margin-left: -60px;
+    }
+
     .timeline > li .timeline-image h4 {
         font-size: 13px;
         margin-top: 16px;
