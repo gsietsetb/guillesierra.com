@@ -14,6 +14,7 @@
 }
 
 body {
+    padding-top: 80px;
     overflow-x: hidden;
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
     webkit-tap-highlight-color: #122b40
@@ -160,6 +161,10 @@ fieldset[disabled] .btn-xl:hover {
     background-color: #fff
 }
 
+.navbar-brand {
+    padding: 0;
+}
+
 .navbar-custom {
     background-color: #222;
     border-color: transparent
@@ -222,6 +227,11 @@ fieldset[disabled] .btn-xl:hover {
     background-color: #fec503
 }
 
+.navbar-inverse .navbar-nav > li > a {
+    padding-top: 2em;
+    color: white;
+}
+
 @media (min-width:768px) {
     .navbar-custom {
         background-color: transparent;
@@ -250,13 +260,13 @@ fieldset[disabled] .btn-xl:hover {
 }
 
 header {
-    background-image: url(../img/header-bg.jpg);
-    background-repeat: no-repeat;
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: center;
+    background-image: url(../img/gsierra_header.png);
     background-attachment: scroll;
-    background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
     text-align: center;
     color: #fff
@@ -309,7 +319,8 @@ header .intro-text .intro-heading {
 #portfolio .portfolio-item .portfolio-caption p,
 section h3.section-subheading {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic
+    font-style: italic;
+    color: #122b40;
 }
 
 section {
@@ -319,7 +330,8 @@ section {
 section h2.section-heading {
     font-size: 40px;
     margin-top: 0;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    color: #2e6da4;
 }
 
 section h3.section-subheading {
@@ -432,8 +444,8 @@ footer ul.quicklinks {
     bottom: 0;
     position: absolute;
     content: "";
-    width: 2px;
-    background-color: #f1f1f1;
+    width: 1px;
+    border: 1px ridge #2e6da4;
     left: 40px;
     margin-left: -1.5px
 }
@@ -483,10 +495,10 @@ footer ul.quicklinks {
     height: 80px;
     position: absolute;
     z-index: 100;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
     color: #fff;
     border-radius: 100%;
-    border: 7px solid #f1f1f1;
+    border: 2px dashed #2e6da4;
     text-align: center
 }
 
@@ -500,7 +512,7 @@ footer ul.quicklinks {
     background-color: #f1f1f1;
     color: #fff;
     border-radius: 100%;
-    border: 7px solid #f1f1f1;
+    border: 7px solid #afafaf;
     text-align: center
 }
 
@@ -539,12 +551,17 @@ footer ul.quicklinks {
     color: inherit
 }
 
+.timeline .timeline-heading h2 {
+    margin-top: 0;
+    color: #2e6da4
+}
+
 .timeline .timeline-heading h4.subheading {
-    text-transform: none
+    text-transform: none;
+    color: #122b40;
 }
 
 .timeline .timeline-heading h5.date {
-    onC;
     font-weight: 100;
     text-transform: none;
     font-style: normal;
@@ -888,7 +905,7 @@ button.tip {
 img.mainPic {
     height: 15vh;
     float: left;
-    border: double 4px #8a6d3b;
+    /*border: double 4px #8a6d3b;*/
 }
 
 @media (max-width:768px) {
@@ -899,31 +916,31 @@ img.mainPic {
     }
 }
 
-@media screen and (min-width: 800px) {
-    #section-how-it-works:before {
-        content: " ";
-        position: absolute;
-        top: 280vh;
-        right: 0;
-        z-index: 0;
-        display: block;
-        width: 25%;
-        height: 0;
-        padding-bottom: 27.3121387283237%;
-        background: url("../img/icons/scribble-right-001.svg") top left no-repeat;
-        background-size: 100% 100%
-    }
-    #section-how-it-works:after {
-        content: " ";
-        position: absolute;
-        bottom: -206vh;
-        left: 0;
-        z-index: 0;
-        display: block;
-        width: 25%;
-        height: 0;
-        padding-bottom: 28.8517441860465%;
-        background: url("../img/icons/scribble-left-001.svg") top left no-repeat;
-        background-size: 100% 100%
-    }
-}
+/*@media screen and (min-width: 800px) {*/
+/*#section-how-it-works:before {*/
+/*content: " ";*/
+/*position: absolute;*/
+/*top: 280vh;*/
+/*right: 0;*/
+/*z-index: 0;*/
+/*display: block;*/
+/*width: 25%;*/
+/*height: 0;*/
+/*padding-bottom: 27.3121387283237%;*/
+/*background: url("../img/icons/scribble-right-001.svg") top left no-repeat;*/
+/*background-size: 100% 100%*/
+/*}*/
+/*#section-how-it-works:after {*/
+/*content: " ";*/
+/*position: absolute;*/
+/*bottom: -206vh;*/
+/*left: 0;*/
+/*z-index: 0;*/
+/*display: block;*/
+/*width: 25%;*/
+/*height: 0;*/
+/*padding-bottom: 28.8517441860465%;*/
+/*background: url("../img/icons/scribble-left-001.svg") top left no-repeat;*/
+/*background-size: 100% 100%*/
+/*}*/
+/*}*/

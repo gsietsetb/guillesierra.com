@@ -15,20 +15,21 @@
     <!--OG share -->
     <meta property="og:title" content="Guillermo Sierra" />
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="https://guillesierra.com/img/team/gSierra_m.png">
-    <meta property="og:image:secure_url" content="https://guillesierra.com/img/team/gSierra_m.png"/>
+    <meta property="og:image" content="https://guillesierra.com/img/logos/gsierra_light.png">
+    <meta property="og:image:secure_url" content="https://guillesierra.com/img/logos/gsierra_light.png"/>
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
     <meta property="og:description"
           content="Founder of ShotGot and Autoqe. Telecommunication Engineer."/>
-    <meta property="og:favicon" content="https://guillesierra.com/img/team/gSierra_m.png">
+    <meta property="og:favicon" content="https://guillesierra.com/img/logos/gsierra_light.png">
     <meta property="og:url" content="https://www.guillesierra.com/">
 
-    <link rel="shortcut icon" href="img/team/gSierra.jpg">
+    <link rel="shortcut icon" href="img/logos/gsierra_light.png">
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">-->
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -39,7 +40,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
-    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -59,48 +60,61 @@
 <!-- Google Analytics-->
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-87929994-1', 'auto');
     ga('send', 'pageview');
 </script>
 
-<!-- Navigation -->
-<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container">
+<nav id="mainNav" style="min-height: 100px" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+        <a class="navbar-brand" style="color: #2e6da4" href="#page-top">
+            <img alt="gsierra" height="90" src="img/logos/gsierra_side_b.svg">
+        </a>
+        <h1 class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#collapsed-data" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <!--Menu <i class="fa fa-bars"></i>-->
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" style="color: #2e6da4" href="#page-top">Guillermo Sierra</a>
-        </div>
+
+        </h1>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <h4 class="collapse navbar-collapse" id="collapsed-data">
             <ul class="nav navbar-nav navbar-right">
                 <li class="hidden">
                     <a href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    <a class="page-scroll" href="#portfolio">
+                        <span style="color: #2e6da4" class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                        Portfolio</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#about">About</a>
+                    <a class="page-scroll" href="#timeline">
+                        <span style="color: #2e6da4" class="glyphicon glyphicon-hourglass" aria-hidden="true"></span>
+                        Timeline</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#services">Services</a>
+                    <a class="page-scroll" href="#services">
+                        <span style="color: #2e6da4" class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+                        Services</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="#contact">
+                        <span style="color: #2e6da4" class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        Contact</a>
                 </li>
             </ul>
-        </div>
+        </h4>
         <!-- /.navbar-collapse -->
     </div>
     <!-- /.container-fluid -->
@@ -108,16 +122,27 @@
 
 <!-- Header -->
 <header>
-    <div class="container">
-        <div class="intro-text">
-            <img src="img/team/gSierra.jpg" class="img-circle img-responsive mainPic" alt="">
-            <div class="intro-heading" style="-webkit-text-stroke: 1.5px #8a6d3b">Guillermo Sierra</div>
-            <div class="intro-lead-in" style="font-style: normal;text-align: center">
-                Founder of
-                <a style="color: #2e6da4" href="https://www.shotgot.com/">ShotGot</a>
-                and <a style="color: #2e6da4" href="https://www.autoqe.com/">Autoqe</a>.
-                <br> Telecomunication Engineer.
-            </div>
+    <div class="container" style="height: 40vh">
+        <!--<div class="intro-text">-->
+        <!--&lt;!&ndash;<img src="img/logos/gsierra_side_b.svg" class="img-responsive mainPic" alt="">&ndash;&gt;-->
+        <!--<img src="img/logos/gsierra_side_b.svg" class="img-responsive mainPic" alt="">-->
+        <!--&lt;!&ndash;<div class="intro-heading" style="-webkit-text-stroke: 1.5px #8a6d3b">Guillermo Sierra</div>&ndash;&gt;-->
+        <!--<div class="intro-lead-in" style="font-style: normal;text-align: center">-->
+        <!--Founder of-->
+        <!--<a style="color: #2e6da4" href="https://www.shotgot.com/">ShotGot</a>-->
+        <!--and <a style="color: #2e6da4" href="https://www.autoqe.com/">Autoqe</a>.-->
+        <!--<br> Telecomunication Engineer.-->
+        <!--</div><div class="intro-lead-in" style="font-style: normal;text-align: center">-->
+        <!--Founder of-->
+        <!--<a style="color: #2e6da4" href="https://www.shotgot.com/">ShotGot</a>-->
+        <!--and <a style="color: #2e6da4" href="https://www.autoqe.com/">Autoqe</a>.-->
+        <!--<br> Telecomunication Engineer.-->
+        <!--</div><div class="intro-lead-in" style="font-style: normal;text-align: center">-->
+        <!--Founder of-->
+        <!--<a style="color: #2e6da4" href="https://www.shotgot.com/">ShotGot</a>-->
+        <!--and <a style="color: #2e6da4" href="https://www.autoqe.com/">Autoqe</a>.-->
+        <!--<br> Telecomunication Engineer.-->
+        <!--</div>-->
             <!--a href="https://mail.google.com/mail/?view=cm&fs=1&to=gsierra@guillesierra.com"
                class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">gsierra@guillesierra.com</span></a>
             </li>
@@ -143,7 +168,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Portfolio</h2>
+                <h2 class="section-heading">
+                    <span style="color: #122b40" class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                    Portfolio</h2>
                 <h3 class="section-subheading text-muted">Compendium of different <b>Startups</b>, <b>Challenges</b> and
                     <b>Hackathon projects</b>
                     <br>which turned me into the person I am today...</h3>
@@ -163,7 +190,7 @@
                 </a>
                 <div class="portfolio-caption">
                     <a href="https://www.autoqe.com/">
-                        <img src="img/brands/autoqe_sqr.png" class="img-rounded" height="50px" style="float: left"
+                        <img src="img/brands/autoqe.svg" class="img-rounded" height="50px" style="float: left"
                              alt="">
                         <img src="img/icons/startup.png" class="img-rounded" height="32px" style="float: right" alt="">
                         <h4>Autoqe</h4></a>
@@ -267,9 +294,9 @@
     </div>
 </section>
 
-<!-- About Section -->
+<!-- Timeline Section -->
 <section id="section-how-it-works">
-    <div class="container" id="about">
+    <div class="container" id="timeline">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -279,16 +306,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <h2 class="section-heading">About</h2>
+                <h2 class="section-heading">
+                    <span style="color: #122b40" class="glyphicon glyphicon-hourglass" aria-hidden="true"></span>
+                    Timeline</h2>
                 <h3 class="section-subheading text-muted">
                     Find below some of my lifetime stages...
                     <hr>
-                    <button class="" style="margin-top: 5px;background: transparent;border-radius: 5%" type="button"
-                            onclick="toggleInfo()">
+                    <button style="margin-top: 2em" type="button" class="btn btn-default" onclick="toggleInfo()">
                         <i style="color: black" class="fa fa-bars"></i>
-                        Click the icons below to show more details:
-                        <img id="toggle-arrow" src="img/icons/arrow.png" height="32">
+                        Click the icons for more details:
                     </button>
+
+                    <!--<button class="" style="margin-top: 5px;background: transparent;border-radius: 5%" type="button"-->
+                    <!--onclick="toggleInfo()">-->
+                    <!--<i style="color: black" class="fa fa-bars"></i>-->
+                    <!--Click the icons below to show more details:-->
+                    <!--<img id="toggle-arrow" src="img/icons/arrow.png" height="32">-->
+                    <!--</button>-->
                 </h3>
                 <script>
                     var disp = true;
@@ -307,11 +341,74 @@
             <div class="col-lg-12">
                 <ul class="timeline">
 
+                    <!-- Gsierra -->
+                    <li>
+                        <div class="timeline-image" onclick="toggleInfo()">
+                            <a href="https://www.guillesierra.com/">
+                                <img class="img-circle img-responsive" src="img/logos/gsierra_w.svg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <a href="https://www.guillesierra.com/">
+                                    <h2 class="subheading">
+                                        <!--<img src="img/icons/startup.png" class="img-rounded" height="32">-->
+                                        Guille<span style="color: #122b40">sierra</span></h2>
+                                    <h4>Personal webpage template</h4>
+                                </a>
+                                <p>Designer and publisher</p>
+                                <h5 class="date">
+                                    <!--<img src="img/country/chile.png" class="img-rounded" height="32">-->
+                                    <img src="img/country/italy.svg" class="img-rounded" height="32">
+                                    Naples, Aug '17</h5>
+                            </div>
+                            <hr>
+                            <!--<div class="timeline-body">-->
+                            <!--<p class="text-muted">-->
+                            <!--All-in-one transport application in the context of Collaborative Economy,-->
+                            <!--including <b>Carpooling</b>, <b>Carsharing</b>, and private <b>car or parking-->
+                            <!--rental</b>.-->
+                            <!--</p>-->
+                            <!--</div>-->
+                        </div>
+                    </li>
+
+                    <!-- Ganomad -->
+                    <li class="timeline-inverted">
+                        <div class="timeline-image" onclick="toggleInfo()">
+                            <img class="img-circle img-responsive" src="img/brands/ganomad.png" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h2 class="subheading" href="https://www.ganomad.com/">
+                                    Ganomad
+                                    <!--<img src="img/icons/startup.png" class="img-rounded" height="32">-->
+                                </h2>
+                                <h4> Map Portfolio template</h4>
+                                <p> Designer and publisher</p>
+                                <h5 class="date">
+                                    <!--<img src="img/country/world.png" class="img-rounded" height="32">-->
+                                    <img src="img/country/sp.png" class="img-rounded" height="32">
+                                    <!--<img src="img/country/eu-round.png" class="img-rounded" height="32">-->
+                                    Jun '17</h5>
+                            </div>
+                            <hr>
+                            <!--<div class="timeline-body">-->
+                            <!--<p class="text-muted">-->
+                            <!--Visual search engine able to match a picture with an item within a catalog providing-->
+                            <!--a-->
+                            <!--powerful, scalable purchase comparator platform. </p>-->
+                            <!--</div>-->
+                        </div>
+                    </li>
+
                     <!-- Autoqe -->
                     <li>
                         <div class="timeline-image" onclick="toggleInfo()">
                             <a href="https://www.autoqe.com/">
-                                <img class="img-circle img-responsive" src="img/brands/autoqe_sqr.png" alt="">
+                                <img class="img-circle img-responsive" src="img/brands/autoqe.svg" alt="autoqe">
                             </a>
                         </div>
                         <div>
@@ -344,7 +441,7 @@
                     <!-- ShotGot -->
                     <li class="timeline-inverted">
                         <div class="timeline-image" onclick="toggleInfo()">
-                            <img class="img-circle img-responsive" src="img/brands/shotgot.png" alt="">
+                            <img class="img-circle img-responsive" src="img/brands/shotgot.png" alt="shotgot">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -377,10 +474,10 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h3 class="subheading">
+                                <h2 class="subheading">
                                     <img src="img/icons/suitcase.png" class="img-rounded" height="32">
-                                    Amadeus</h3>
-                                <h5 class="subheading"> Java Developer</h5>
+                                    Amadeus</h2>
+                                <h4 class="subheading"> Java Developer</h4>
                                 <h5 class="date">
                                     <img src="img/country/fr.png" class="img-rounded" height="32">
                                     Nice, Jun-Nov '16</h5>
@@ -401,11 +498,11 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h3 class="subheading">
+                                <h2 class="subheading">
                                     Seat
                                     <img src="img/icons/suitcase.png" class="img-rounded" height="32">
-                                </h3>
-                                <h5 class="subheading">Android Developer</h5>
+                                </h2>
+                                <h4 class="subheading">Android Developer</h4>
                                 <h5 class="date">
                                     <img src="img/country/sp.png" class="img-rounded" height="32">
                                     Bcn, Mar-May '16</h5>
@@ -430,10 +527,10 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h3 class="subheading">
+                                <h2 class="subheading">
                                     <img src="img/icons/second.png" class="img-rounded" height="32">
-                                    EWSN 2016 </h3>
-                                <h5 class="subheading"> IoT Dependability CHALLENGE </h5>
+                                    EWSN 2016 </h2>
+                                <h4 class="subheading"> IoT Dependability CHALLENGE </h4>
                                 <h5 class="date">
                                     <img src="img/country/austria.png" class="img-rounded" height="32">
                                     Graz, Feb '16</h5>
@@ -454,9 +551,9 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h3 class="subheading"> HackEPFL 2015
+                                <h2 class="subheading"> HackEPFL 2015
                                     <img src="img/icons/second.png" class="img-rounded" height="32"">
-                                </h3>
+                                </h2>
                                 <h4 class="subheading"> Facebook Hackathon at EPFL</h4>
                                 <h5 class="date">
                                     <img src="img/country/ch.png" class="img-rounded" height="32">
@@ -481,9 +578,9 @@
                             <div class="timeline-heading">
 
                                 <!--<h3 class="subheading"> <br>Exchange project - EPFL</h3>-->
-                                <h3><img src="img/icons/study-black.png" class="img-rounded" height="32">
-                                    Collaborative sensing on selfdriving cars</h3>
-                                <h4>Exchange project at EPFL</h4>
+                                <h2><img src="img/icons/study-black.png" class="img-rounded" height="32">
+                                    Exchange project at EPFL</h2>
+                                <h4>Collaborative sensing on selfdriving cars</h4>
                                 <h5 class="date"><img src="img/country/ch.png" class="img-rounded" height="32">
                                     Lausanne, Feb-Jun '15</h5>
                             </div>
@@ -504,9 +601,9 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h3 class="subheading"> ThinkBig 2014
+                                <h2 class="subheading"> ThinkBig 2014
                                     <img src="img/icons/second.png" class="img-rounded" height="32">
-                                </h3>
+                                </h2>
                                 <h4 class="subheading"> Telefonica Smartcity Hackathon</h4>
                                 <h5 class="date">
                                     <img src="img/country/eu-round.png" class="img-rounded" height="32">
@@ -529,9 +626,9 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h3 class="subheading">
+                                <h2 class="subheading">
                                     <img src="img/icons/second.png" class="img-rounded" height="32">
-                                    Nanosatellite CUBESAT</h3>
+                                    Nanosatellite CUBESAT</h2>
                                 <h4 class="subheading"> GOOGLE award</h4>
                                 <h5 class="date">
                                     <img src="img/country/eu-round.png" class="img-rounded" height="32">
@@ -565,10 +662,12 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h3 class="subheading">
+                                <h2 class="subheading">
                                     <img src="img/icons/study-black.png" class="img-rounded" height="32">
-                                    Telecommunication Engineering - UPC
-                                </h3>
+                                    Telecommunication Eng.
+                                </h2>
+                                <h4 class="subheading">B.Sc. at UPC - Branch in Telematics</h4>
+
                                 <h5 class="date">
                                     <img src="img/country/sp.png" class="img-rounded" height="32">
                                     Bcn, 2010-'15</h5>
@@ -591,10 +690,11 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h3 class="subheading">
+                                <h2 class="subheading">
                                     <img src="img/icons/second.png" class="img-rounded" height="32">
-                                    Robosumo UPC Challenge 2010
-                                </h3>
+                                    Robosumo 2010
+                                </h2>
+                                <h4 class="subheading">HighSchool project at UPC Challenge</h4>
                                 <h5 class="date">
                                     <img src="img/country/eu-round.png" class="img-rounded" height="32">
                                     Bcn, Jun '10</h5>
@@ -616,10 +716,10 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h3 class="subheading">
+                                <h2 class="subheading">
                                     Born
                                     <img src="img/icons/startup.png" class="img-rounded" height="32">
-                                </h3>
+                                </h2>
                                 <h5 class="date">
                                     <img src="img/country/sp.png" class="img-rounded" height="32">
                                     Bcn, 9th Dec 1992</h5>
@@ -637,18 +737,21 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Services</h2>
+                <h2 class="section-heading">
+                    <span style="color: white" class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+                    Services</h2>
                 <h3 class="section-subheading text-muted">Find out what can I actually offer...</h3>
             </div>
         </div>
         <div class="row text-center">
+
             <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-diamond fa-stack-1x fa-inverse"></i>
                     </span>
-                <h4 class="service-heading">E-Commerce</h4>
-                <p class="text-muted">Experience in e-Commerce platform deployments.</p>
+                <h4 class="service-heading">Web and App design</h4>
+                <p class="text-muted">Startup and company IT consulting and development.</p>
             </div>
             <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -657,6 +760,14 @@
                     </span>
                 <h4 class="service-heading">Company IT Consultancy</h4>
                 <p class="text-muted">Startup and company IT consulting and development.</p>
+            </div>
+            <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                    </span>
+                <h4 class="service-heading">E-Commerce</h4>
+                <p class="text-muted">Experience in e-Commerce platform deployments.</p>
             </div>
             <div class="col-md-4">
                     <span class="fa-stack fa-4x">
@@ -808,7 +919,7 @@
 </section>-->
 
 <footer>
-    <div class="container">
+    <div id="contact" class="container">
         <div class="row">
             <div class="col-md-4">
                 <span class="copyright">Copyright &copy; Guillesierra.com 2017</span>
@@ -839,11 +950,15 @@
                             <i class="fa fa-github"></i>
                         </a>
                     </li>
-
                     <li>
-                        <a href="https://www.facebook.com/Telecos.MIT">
+                        <a href="https://www.instagram.com/gsierra_/">
+                            <i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/g.sierra.aiello">
                             <i class="fa fa-facebook"></i></a>
                     </li>
+
                 </ul>
             </div>
             <div class="col-md-4">
@@ -926,7 +1041,7 @@
                                 <img src="img/icons/startup.png" class="img-rounded" height="32px" style="float: right"
                                      alt="">
                                 <h2>
-                                    <img src="img/brands/autoqe_sqr.png" class="img-rounded" height="50px" alt=""
+                                    <img src="img/brands/autoqe.svg" class="img-rounded" height="50px" alt=""
                                          style="vertical-align: text-top">
                                     Autoqe</h2></a>
                             <h3>Auto al Toque</h3>
@@ -1098,15 +1213,24 @@
 </div>
 
 <!-- jQuery -->
-<script src="vendor/jquery/jquery.min.js"></script>
+<!--<script src="vendor/jquery/jquery.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
 <!-- Plugin JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"
-        integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb"
-        crossorigin="anonymous"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"-->
+<!--integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb"-->
+<!--crossorigin="anonymous"></script>-->
 
 <!-- Contact Form JavaScript -->
 <script src="js/jqBootstrapValidation.js"></script>
