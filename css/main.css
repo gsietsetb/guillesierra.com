@@ -34,7 +34,7 @@ h6 {
 }
 
 .text-muted {
-    color: #777
+    color: white;
 }
 
 .text-primary,
@@ -76,6 +76,10 @@ a:hover {
 
 .bg-darkest-gray {
     background-color: #222
+}
+
+.bg-darkest-gray h4 {
+    color: #2e6da4;
 }
 
 .btn-primary {
@@ -263,7 +267,7 @@ header {
     background-size: auto;
     background-repeat: repeat;
     background-position: center;
-    background-image: url(../img/gsierra_header.png);
+    background-image: url(../img/background/gsierra.png);
     background-attachment: scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -319,7 +323,7 @@ header .intro-text .intro-heading {
 #portfolio .portfolio-item .portfolio-caption p,
 section h3.section-subheading {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
+    /*font-style: italic;*/
     color: #122b40;
 }
 
