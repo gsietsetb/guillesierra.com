@@ -37,6 +37,10 @@ h6 {
     color: #122b40;
 }
 
+.text-muted-light {
+    color: white;
+}
+
 .text-primary,
 a {
     color: #122b40
