@@ -67,7 +67,7 @@ a.active,
 a:active,
 a:focus,
 a:hover {
-    color: #fec503
+    color: #2e6da4;
 }
 
 .img-centered {
@@ -98,8 +98,8 @@ a:hover {
 .btn-primary:hover,
 .open .dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #fec503;
-    border-color: #f6bf01
+    background-color: #2e6da4;
+    border-color: #74acdf
 }
 
 .btn-primary.disabled,
@@ -141,8 +141,8 @@ fieldset[disabled] .btn-primary:hover {
 .btn-xl:hover,
 .open .dropdown-toggle.btn-xl {
     color: #fff;
-    background-color: #fec503;
-    border-color: #f6bf01
+    background-color: #2e6da4;
+    border-color: #74acdf
 }
 
 .btn-xl.disabled,
@@ -173,8 +173,17 @@ fieldset[disabled] .btn-xl:hover {
     padding: 0;
 }
 
+.navbar-gsierra {
+    background-color: white;
+    border-color: transparent
+}
+
+.bg-light{
+    background: #2e6da4;
+}
+
 .navbar-custom {
-    background-color: #222;
+    background-color: white;
     border-color: transparent
 }
 
@@ -187,7 +196,7 @@ fieldset[disabled] .btn-xl:hover {
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:hover {
-    color: #fec503
+    color: #2e6da4
 }
 
 .navbar-custom .nav li a,
@@ -232,7 +241,7 @@ fieldset[disabled] .btn-xl:hover {
 .navbar-custom .navbar-nav>.active>a:focus,
 .navbar-custom .navbar-nav>.active>a:hover {
     color: #fff;
-    background-color: #fec503
+    background-color: #2e6da4
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -373,7 +382,7 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-    background: rgba(254, 209, 54, .9);
+    background: #2e6da4;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -903,8 +912,8 @@ img::-moz-selection {
 
 button.tip {
     border-radius: 10%;
-    color: #f6bf01;
-    background: #f6bf01 url('../img/header-bg_s.jpg') round;
+    color: #74acdf;
+    /*background: #74acdf url('../img/header-bg_s.jpg') round;*/
     float: right;
     height: 100px;
     width: 100px;
