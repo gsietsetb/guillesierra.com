@@ -277,16 +277,17 @@ fieldset[disabled] .btn-xl:hover {
 }
 
 header {
-    background-size: auto;
+    height: 63vh;
+    background-size: contain;
     background-repeat: repeat;
     background-position: center;
-    background-image: url(../img/background/gsierra.png);
+    background-image: url(../img/background/gsierra_header.jpg);
     background-attachment: scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     text-align: center;
-    color: #fff
+background-color: transparent;    color: #fff
 }
 
 header .intro-text {
@@ -345,7 +346,7 @@ section {
 }
 
 section h2.section-heading {
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 0;
     margin-bottom: 15px;
     color: #2e6da4;
