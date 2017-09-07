@@ -70,6 +70,17 @@ a:hover {
     color: #2e6da4;
 }
 
+/*Maps*/
+#map {
+    height: 50vh;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .img-centered {
     margin: 0 auto
 }
@@ -249,6 +260,15 @@ fieldset[disabled] .btn-xl:hover {
     color: white;
 }
 
+.page-scroll{
+    color: #2e6da4;
+    font-size: smaller;
+}
+
+.page-scroll span{
+    color: #122b40!important;
+}
+
 @media (min-width:768px) {
     .navbar-custom {
         background-color: transparent;
@@ -277,17 +297,38 @@ fieldset[disabled] .btn-xl:hover {
 }
 
 header {
-    height: 63vh;
-    background-size: contain;
-    background-repeat: repeat;
-    background-position: center;
-    background-image: url(../img/background/gsierra_header.jpg);
-    background-attachment: scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    /*height: auto!important;*/
+    /*position: relative;*/
+    min-height: 30vh;
+    /*min-width:100%;*/
+    /*background-size: 100%;*/
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*-o-background-attachment: fixed;:*/
     text-align: center;
-background-color: transparent;    color: #fff
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/background/gsierra_header.png);
+    background-color: transparent;
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    color: #fff
+}
+
+
+@media (min-width:968px) {
+    header {
+        min-height: 40vh;
+        /*height: 100%;*/
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: transparent;
+        background-size: cover;
+        background-attachment: scroll;
+        color: #fff
+    }
+
 }
 
 header .intro-text {
@@ -342,7 +383,7 @@ section h3.section-subheading {
 }
 
 section {
-    padding: 100px 0
+    padding: 20px 0 0 0
 }
 
 section h2.section-heading {
@@ -361,7 +402,7 @@ section h3.section-subheading {
 
 @media (min-width:768px) {
     section {
-        padding: 60px 0
+        padding: 20px 0 0 0
     }
 }
 
@@ -644,6 +685,11 @@ footer ul.quicklinks {
         margin-top: 30px;
         line-height: 26px
     }
+
+    .page-scroll{
+        font-size: large;
+    }
+
 }
 
 @media (min-width:1200px) {
@@ -698,7 +744,7 @@ aside.clients img {
 
 section#contact {
     background-color: #222;
-    background-image: url(../img/map-image.png);
+    /*background-image: url(../img/map-image.png);*/
     background-position: center;
     background-repeat: no-repeat
 }
@@ -925,13 +971,38 @@ img.mainPic {
     float: left;
     /*border: double 4px #8a6d3b;*/
 }
+#mainNav{
+    min-width: 100px;
+}
 
+.navbar-brand img{
+    height: 90px
+}
+
+@media (max-width:864px) {
+    /*.page-scroll{*/
+        /*font-size: small;*/
+    /*}*/
+    .navbar-brand img{
+        height: 60px;
+        margin-top: 6px;
+    }
+
+    .page-scroll{
+        margin-top: -1em;
+    }
+
+    #mainNav{
+        min-width: 60px;
+    }
+}
 @media (max-width:768px) {
     img.mainPic {
         float: none;
         margin-bottom: 4vh;
         display: inline;
     }
+
 }
 
 /*@media screen and (min-width: 800px) {*/

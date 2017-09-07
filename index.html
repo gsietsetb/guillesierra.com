@@ -54,6 +54,34 @@
             crossorigin="anonymous"></script>
     <![endif]-->
 
+    <!--&lt;!&ndash;Maps&ndash;&gt;-->
+    <!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>-->
+    <!--<script type="text/javascript">-->
+    <!--google.charts.load('current', {-->
+    <!--'packages':['geochart'],-->
+    <!--// Note: you will need to get a mapsApiKey for your project.-->
+    <!--// See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings-->
+    <!--'mapsApiKey': 'AIzaSyBeENDx02_BYS8ahyu6lENMWmce92wlh7A'-->
+    <!--});-->
+    <!--google.charts.setOnLoadCallback(drawRegionsMap);-->
+    <!--function drawRegionsMap() {-->
+    <!--var data = google.visualization.arrayToDataTable([-->
+    <!--['Country', 'Popularity'],-->
+    <!--['Germany', 200],-->
+    <!--['United States', 300],-->
+    <!--['Brazil', 400],-->
+    <!--['Canada', 500],-->
+    <!--['France', 600],-->
+    <!--['RU', 700]-->
+    <!--]);-->
+
+    <!--var options = {};-->
+
+    <!--var chart = new google.visualization.GeoChart(document.getElementById('map'));-->
+
+    <!--chart.draw(data, options);-->
+    <!--}-->
+    <!--</script>-->
 </head>
 
 <body id="page-top" class="index">
@@ -73,11 +101,11 @@
     ga('send', 'pageview');
 </script>
 
-<nav id="mainNav" style="min-height: 100px" class="navbar navbar-fixed-top navbar-gsierra">
+<nav id="mainNav" class="navbar navbar-fixed-top navbar-gsierra">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <a class="navbar-brand" style="color: #2e6da4" href="#page-top">
-            <img alt="gsierra" height="90" src="img/logos/gsierra_side.svg">
+        <a class="navbar-brand" href="#page-top">
+            <img alt="gsierra" src="img/logos/gsierra_side.svg">
         </a>
         <h1 class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -99,27 +127,26 @@
                 </li>
                 <li>
                     <a class="page-scroll" href="#portfolio">
-                        <span style="color: #2e6da4" class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                        <img height="20" src="img/icons/rocket-icon.svg"/>
+                        Projects</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#map">
+                        <img height="20" src="img/icons/world.svg"/>
                         Map</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#portfolio">
-                        <span style="color: #2e6da4" class="glyphicon glyphicon-education" aria-hidden="true"></span>
-                        Portfolio</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#timeline">
-                        <span style="color: #2e6da4" class="glyphicon glyphicon-time" aria-hidden="true"></span>
-                        Timeline</a>
-                </li>
+                </li><li>
+                <a class="page-scroll" href="#timeline">
+                    <img height="25" src="img/icons/branch.png"/>
+                    Timeline</a>
+            </li>
                 <li>
                     <a class="page-scroll" href="#services">
-                        <span style="color: #2e6da4" class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
                         Services</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">
-                        <span style="color: #2e6da4" class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
                         Contact</a>
                 </li>
             </ul>
@@ -130,204 +157,562 @@
 </nav>
 
 <!-- Header -->
-<header>
-    <div class="container">
-        <!--<div class="intro-text">-->
-        <!--&lt;!&ndash;<img src="img/logos/gsierra_side_b.svg" class="img-responsive mainPic" alt="">&ndash;&gt;-->
-        <!--<img src="img/logos/gsierra_side_b.svg" class="img-responsive mainPic" alt="">-->
-        <!--<div class="intro-heading" style="-webkit-text-stroke: 1.5px #8a6d3b">When technology meets desing...</div>-->
-        <!--<div class="intro-lead-in" style="font-style: normal;text-align: center">-->
-        <!--Founder of-->
-        <!--<a style="color: #2e6da4" href="https://www.shotgot.com/">ShotGot</a>-->
-        <!--and <a style="color: #2e6da4" href="https://www.autoqe.com/">Autoqe</a>.-->
-        <!--<br> Telecomunication Engineer.-->
-        <!--</div><div class="intro-lead-in" style="font-style: normal;text-align: center">-->
-        <!--Founder of-->
-        <!--<a style="color: #2e6da4" href="https://www.shotgot.com/">ShotGot</a>-->
-        <!--and <a style="color: #2e6da4" href="https://www.autoqe.com/">Autoqe</a>.-->
-        <!--<br> Telecomunication Engineer.-->
-        <!--</div><div class="intro-lead-in" style="font-style: normal;text-align: center">-->
-        <!--Founder of-->
-        <!--<a style="color: #2e6da4" href="https://www.shotgot.com/">ShotGot</a>-->
-        <!--and <a style="color: #2e6da4" href="https://www.autoqe.com/">Autoqe</a>.-->
-        <!--<br> Telecomunication Engineer.-->
-        <!--</div>-->
-        <!--a href="https://mail.google.com/mail/?view=cm&fs=1&to=gsierra@guillesierra.com"
-           class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">gsierra@guillesierra.com</span></a>
-        </li>
-        <li>
-            <a href="https://github.com/gsietsetb" class="btn btn-default btn-lg"><i
-                    class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-        </li>
-        <li>
-            <a href="https://es.linkedin.com/in/sierraguillermo" class="btn btn-default btn-lg"><i
-                    class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-        </li>
-        <li>
-            <a href="https://www.facebook.com/Telecos.MIT" class="btn btn-default btn-lg"><i
-                    class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-        </li>
-        </ul>-->
+<header class="bg-light-gray">
+    <!--<div class="intro-text">-->
+    <!--&lt;!&ndash;<img src="img/logos/gsierra_side_b.svg" class="img-responsive mainPic" alt="">&ndash;&gt;-->
+    <!--<img src="img/logos/gsierra_side_b.svg" class="img-responsive mainPic" alt="">-->
+    <!--<div class="intro-heading" style="-webkit-text-stroke: 1.5px #8a6d3b">When technology meets desing...</div>-->
+    <!--<div class="intro-lead-in" style="font-style: normal;text-align: center">-->
+    <!--Founder of-->
+    <!--<a style="color: #2e6da4" href="https://www.shotgot.com/">ShotGot</a>-->
+    <!--and <a style="color: #2e6da4" href="https://www.autoqe.com/">Autoqe</a>.-->
+    <!--<br> Telecomunication Engineer.-->
+    <!--</div><div class="intro-lead-in" style="font-style: normal;text-align: center">-->
+    <!--Founder of-->
+    <!--<a style="color: #2e6da4" href="https://www.shotgot.com/">ShotGot</a>-->
+    <!--and <a style="color: #2e6da4" href="https://www.autoqe.com/">Autoqe</a>.-->
+    <!--<br> Telecomunication Engineer.-->
+    <!--</div><div class="intro-lead-in" style="font-style: normal;text-align: center">-->
+    <!--Founder of-->
+    <!--<a style="color: #2e6da4" href="https://www.shotgot.com/">ShotGot</a>-->
+    <!--and <a style="color: #2e6da4" href="https://www.autoqe.com/">Autoqe</a>.-->
+    <!--<br> Telecomunication Engineer.-->
+    <!--</div>-->
+    <!--a href="https://mail.google.com/mail/?view=cm&fs=1&to=gsierra@guillesierra.com"
+       class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">gsierra@guillesierra.com</span></a>
+    </li>
+    <li>
+        <a href="https://github.com/gsietsetb" class="btn btn-default btn-lg"><i
+                class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+    </li>
+    <li>
+        <a href="https://es.linkedin.com/in/sierraguillermo" class="btn btn-default btn-lg"><i
+                class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+    </li>
+    <li>
+        <a href="https://www.facebook.com/Telecos.MIT" class="btn btn-default btn-lg"><i
+                class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
+    </li>
+    </ul>-->
     </div>
 </header>
 
-<!-- Map Section -->
-<!--<section id="map" class="container" style="text-align: center">-->
-        <!--&lt;!&ndash;<img height="150" src="img/background/whenDesMeetTech.svg">&ndash;&gt;-->
-<!--</section>-->
-
 <!-- Portfolio Grid Section -->
 <section id="portfolio" class="bg-light-gray">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">
-                    <span style="color: #122b40" class="glyphicon glyphicon-education" aria-hidden="true"></span>
-                    Portfolio</h2>
-                <h3 class="section-subheading text-muted">Main <b>Startups</b>, <b>Hackathons</b> and
-                    <b>projects</b></h3>
-            </div>
-        </div>
-        <div class="row">
-
-            <!--Autoqe-->
-            <div class="col-md-4 col-sm-6 portfolio-item" id="Autoqe">
-                <a href="#portfolioAutoqe" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/about/happy_carpool.jpg" class="img-responsive-caption" height="auto" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <a href="https://www.autoqe.com/">
-                        <img src="img/brands/autoqe.svg" class="img-rounded" height="50px" style="float: left"
-                             alt="">
-                        <img src="img/icons/startup.png" class="img-rounded" height="32px" style="float: right" alt="">
-                        <h4>Autoqe</h4></a>
-                    <h5>Auto al Toque</h5>
-                    <p class="text-muted">Founder, CTO and Sales Manager</p>
-                </div>
-            </div>
-
-            <!--ShotGot-->
-            <div class="col-md-4 col-sm-6 portfolio-item" id="ShotGot">
-                <a href="#portfolioShotGot" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/about/imgRecog4.jpg" class="img-responsive-caption" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <a href="https://www.shotgot.com/">
-                        <img src="img/brands/shotgot.png" class="img-rounded" height="50px" style="float: left" alt="">
-                        <img src="img/icons/startup.png" class="img-rounded" height="32px" style="float: right" alt="">
-                        <h4>Shotgot </h4></a>
-                    <h5>See it, Got it</h5>
-                    <p class="text-muted">Founder</p>
-                </div>
-            </div>
-
-            <!--Matchyang-->
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioMatchyang" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/faceMatch2.jpg" class="img-responsive-caption" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <img src="img/portfolio/fishYang.png" class="img-rounded" height="50px" style="float: left" alt="">
-                    <h4>MatchyYang</h4>
-                    <p class="text-muted">Real Time Face Matching </p>
-                </div>
-            </div>
-
-            <!--Mindstormer-->
-            <div class="col-md-4 col-sm-6 portfolio-item">
-                <a href="#portfolioMindstorm" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/brainstorm2.jpg" class="img-responsive-caption" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <img src="img/portfolio/brainstorm.png" class="img-rounded" height="50px" style="float: left"
-                         alt="">
-                    <h4>Mindstormer</h4>
-                    <p class="text-muted">Startup name suggester</p>
-                </div>
-            </div>
-
-            <!--EWSN-->
-            <div class="col-md-4 col-sm-6 portfolio-item" id="EWSN">
-                <a href="#portfolioEWSN" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/ewsn.jpg" class="img-responsive-caption" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <img src="img/brands/telosB.gif" class="img-rounded" height="50px" style="float: left" alt="">
-                    <img src="img/icons/second.png" class="img-rounded" height="32px" style="float: right" alt="">
-                    <h4>ELI-IoT</h4>
-                    <p class="text-muted">EWSN challenge 2016</p>
-                </div>
-            </div>
-
-            <!--ThirdEye-->
-            <div class="col-md-4 col-sm-6 portfolio-item" id="ThirdEye">
-                <a href="#portfolioThirdEye" class="portfolio-link" data-toggle="modal">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="img/portfolio/bikeThirdEye5.jpg" width="333px" class="img-responsive-caption" alt="">
-                </a>
-                <div class="portfolio-caption">
-                    <img src="img/brands/thirdeye.png" class="img-rounded" height="50px" style="float: left" alt="">
-                    <img src="img/icons/second.png" class="img-rounded" height="32px" style="float: right" alt="">
-                    <h4>ThirdEye</h4>
-                    <p class="text-muted">Bike - Augmented Reality</p>
-                </div>
-            </div>
-
+    <!--<div class="container">-->
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading">
+                <img height="30" src="img/icons/rocket-icon.svg"/>
+                Projects</h2>
+            <h3 class="section-subheading text-muted">Main <b>Startups</b>, <b>Hackathons</b> and
+                <b>Projects</b></h3>
         </div>
     </div>
+    <div class="row">
+
+        <!--Autoqe-->
+        <div class="col-md-4 col-sm-6 portfolio-item" id="Autoqe">
+            <a href="#portfolioAutoqe" class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                        <i class="fa fa-plus fa-3x"></i>
+                    </div>
+                </div>
+                <img src="img/about/happy_carpool.jpg" class="img-responsive-caption" height="auto" alt="">
+            </a>
+            <div class="portfolio-caption">
+                <a href="https://www.autoqe.com/">
+                    <img src="img/brands/autoqe.svg" class="img-rounded" height="50px" style="float: left"
+                         alt="">
+                    <img src="img/icons/rocket-icon.svg" class="img-rounded" height="32px" style="float: right" alt="">
+                    <h4>Autoqe</h4></a>
+                <h5>Auto al Toque</h5>
+                <p class="text-muted">Founder</p>
+            </div>
+        </div>
+
+        <!--ShotGot-->
+        <div class="col-md-4 col-sm-6 portfolio-item" id="ShotGot">
+            <a href="#portfolioShotGot" class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                        <i class="fa fa-plus fa-3x"></i>
+                    </div>
+                </div>
+                <img src="img/about/imgRecog4.jpg" class="img-responsive-caption" alt="">
+            </a>
+            <div class="portfolio-caption">
+                <a href="https://www.shotgot.com/">
+                    <img src="img/brands/shotgot.png" class="img-rounded" height="50px" style="float: left" alt="">
+                    <img src="img/icons/rocket-icon.svg" class="img-rounded" height="32px" style="float: right" alt="">
+                    <h4>ShotGot </h4></a>
+                <h5>See it, Got it</h5>
+                <p class="text-muted">Founder</p>
+            </div>
+        </div>
+
+        <!--Matchyang-->
+        <div class="col-md-4 col-sm-6 portfolio-item">
+            <a href="#portfolioMatchyang" class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                        <i class="fa fa-plus fa-3x"></i>
+                    </div>
+                </div>
+                <img src="img/portfolio/faceMatch2.jpg" class="img-responsive-caption" alt="">
+            </a>
+            <div class="portfolio-caption">
+                <img src="img/portfolio/fishYang.png" class="img-rounded" height="50px" style="float: left" alt="">
+                <h4>MatchyYang</h4>
+                <h5>Dating App</h5>
+                <p class="text-muted">Real Time Face Matching </p>
+            </div>
+        </div>
+
+        <!--Mindstormer-->
+        <div class="col-md-4 col-sm-6 portfolio-item">
+            <a href="#portfolioMindstorm" class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                        <i class="fa fa-plus fa-3x"></i>
+                    </div>
+                </div>
+                <img src="img/portfolio/brainstorm2.jpg" class="img-responsive-caption" alt="">
+            </a>
+            <div class="portfolio-caption">
+                <img src="img/portfolio/brainstorm.png" class="img-rounded" height="50px" style="float: left"
+                     alt="">
+                <h4>MindStorm</h4>
+                <h5>Name Brainstorm</h5>
+                <p class="text-muted">Startup name suggestions</p>
+            </div>
+        </div>
+
+        <!--EWSN-->
+        <div class="col-md-4 col-sm-6 portfolio-item" id="EWSN">
+            <a href="#portfolioEWSN" class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                        <i class="fa fa-plus fa-3x"></i>
+                    </div>
+                </div>
+                <img src="img/portfolio/ewsn.jpg" class="img-responsive-caption" alt="">
+            </a>
+            <div class="portfolio-caption">
+                <img src="img/brands/telosB.gif" class="img-rounded" height="50px" style="float: left" alt="">
+                <img src="img/icons/second.png" class="img-rounded" height="32px" style="float: right" alt="">
+                <h4>ELI-IoT</h4>
+                <h5>TelosB network</h5>
+                <p class="text-muted">EWSN challenge 2016</p>
+            </div>
+        </div>
+
+        <!--ThirdEye-->
+        <div class="col-md-4 col-sm-6 portfolio-item" id="ThirdEye">
+            <a href="#portfolioThirdEye" class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                        <i class="fa fa-plus fa-3x"></i>
+                    </div>
+                </div>
+                <img src="img/portfolio/bikeThirdEye5.jpg" width="333px" class="img-responsive-caption" alt="">
+            </a>
+            <div class="portfolio-caption">
+                <img src="img/brands/thirdeye.png" class="img-rounded" height="50px" style="float: left" alt="">
+                <img src="img/icons/second.png" class="img-rounded" height="32px" style="float: right" alt="">
+                <h4>ThirdEye</h4>
+                <h5>Augmented Reality</h5>
+                <p class="text-muted">Real Time Bike alert system</p>
+            </div>
+        </div>
+    </div>
+    <!--</div>-->
 </section>
 
+<!-- Map Section -->
+<section id="section-map">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading">
+                <img height="30" src="img/icons/world.svg"/>
+                Map</h2>
+            <!--<h3 class="section-subheading text-muted">-->
+            <!--Highlights around the globe-->
+            <!--</h3>-->
+        </div>
+    </div>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            // Styles a map in night mode.
+            var Barcelona = {lat: 41.3851, lng: 2.1734},
+                center = {lat: 9.6037, lng: -22.3816},
+                BuenosAires = {lat: -34.6037, lng: -58.3816},
+                Lausanne = {lat: 46.5197, lng: 6.6323},
+                Nice = {lat: 43.7102, lng: 7.2620},
+                Naples = {lat: 40.8518, lng: 14.268},
+                SanFrancisco = {lat: 37.7749, lng: -122.4194},
+                Martorell = {lat: -25.363, lng: 131.044};
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: center,
+                zoom: 3,
+                styles: [
+                    {
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#1d2c4d"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#8ec3b9"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "color": "#1a3646"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.country",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#4b6878"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.land_parcel",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#64779e"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.neighborhood",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.province",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#4b6878"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape.man_made",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#334e87"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape.natural",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#023e58"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#283d6a"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#6f9ba5"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "color": "#1d2c4d"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#023e58"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#3C7680"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#304a7d"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#98a5be"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "color": "#1d2c4d"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#2c6675"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#255763"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#b0d5ce"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "color": "#023e58"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#98a5be"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "color": "#1d2c4d"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit.line",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#283d6a"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit.station",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#3a4762"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#0e1626"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#4e6d70"
+                            }
+                        ]
+                    }
+                ]
+            });var iconShotgot = {
+                url: "https://www.guillesierra.com/img/brands/shotgot.svg", // url
+                scaledSize: new google.maps.Size(80, 80), // scaled size
+                origin: new google.maps.Point(0, 0), // origin
+                anchor: new google.maps.Point(-60, 60) // anchor
+            };var iconAutoqe = {
+                url: "https://www.guillesierra.com/img/brands/autoqe_circ.svg", // url
+                scaledSize: new google.maps.Size(80, 80), // scaled size
+                origin: new google.maps.Point(0, 0), // origin
+                anchor: new google.maps.Point(30, 90) // anchor
+            };var iconEPFL = {
+                url: "https://www.guillesierra.com/img/brands/epfl.png", // url
+                scaledSize: new google.maps.Size(20, 20), // scaled size
+                origin: new google.maps.Point(0, 0), // origin
+                anchor: new google.maps.Point(5, 0) // anchor
+            };var iconFb = {
+                url: "https://www.guillesierra.com/img/brands/facebook.png", // url
+                scaledSize: new google.maps.Size(20, 20), // scaled size
+                origin: new google.maps.Point(0, 0), // origin
+                anchor: new google.maps.Point(-15, 0) // anchor
+            };var iconUpc = {
+                url: "https://www.guillesierra.com/img/brands/upc-logo.png", // url
+                scaledSize: new google.maps.Size(20, 20), // scaled size
+                origin: new google.maps.Point(0, 0), // origin
+                anchor: new google.maps.Point(-5, 10) // anchor
+            };var iconSeat = {
+                url: "https://www.guillesierra.com/img/brands/seat.png", // url
+                scaledSize: new google.maps.Size(20, 20), // scaled size
+                origin: new google.maps.Point(0, 0), // origin
+                anchor: new google.maps.Point(15, 10) // anchor
+            };var iconAmadeus = {
+                url: "https://www.guillesierra.com/img/brands/amadeus.png", // url
+                scaledSize: new google.maps.Size(20, 20), // scaled size
+                origin: new google.maps.Point(0, 0), // origin
+                anchor: new google.maps.Point(15, 10) // anchor
+            };var iconGs = {
+                url: "https://www.guillesierra.com/img/logos/gsierra_circ.svg", // url
+                scaledSize: new google.maps.Size(50, 50), // scaled size
+                origin: new google.maps.Point(0, 0), // origin
+                anchor: new google.maps.Point(0, 0) // anchor
+            };
+
+            new google.maps.Marker({
+                position: SanFrancisco,
+                icon: iconShotgot,
+                map: map
+            });
+            new google.maps.Marker({
+                position: Naples,
+                icon: iconGs,
+                map: map
+            });
+            new google.maps.Marker({
+                position: BuenosAires,
+                icon: iconAutoqe,
+                map: map
+            });
+            new google.maps.Marker({
+                position: Barcelona,
+                icon: iconSeat,
+                map: map
+            });new google.maps.Marker({
+                position: Barcelona,
+                icon: iconUpc,
+                map: map
+            });
+            new google.maps.Marker({
+                position: Lausanne,
+                icon: iconEPFL,
+                map: map
+            });
+            new google.maps.Marker({
+                position: Lausanne,
+                icon: iconFb,
+                map: map
+            });
+            new google.maps.Marker({
+                position: Nice,
+                icon: iconAmadeus,
+                map: map
+            });
+        }
+
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeENDx02_BYS8ahyu6lENMWmce92wlh7A&callback=initMap"
+            async defer></script>
+</section>
+
+
+
 <!-- Timeline Section -->
-<section id="section-how-it-works">
+<section id="section-timeline">
     <div class="container" id="timeline">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
                 <h2 class="section-heading">
-                    <span style="color: #122b40" class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                    <img height="45" src="img/icons/branch.png"/>
                     Timeline</h2>
                 <h3 class="section-subheading text-muted">
-                    Find below some of my lifetime stages...
-                    <hr>
-                    <button style="margin-top: 2em" type="button" class="btn btn-default" onclick="toggleInfo()">
-                        <i style="color: black" class="fa fa-bars"></i>
-                        Click the icons for more details:
-                    </button>
+                    Lifetime stages and highlights
+                    <!--<hr>-->
+                    <!--<button style="margin-top: 2em" type="button" class="btn btn-default" onclick="toggleInfo()">-->
+                    <!--<i style="color: black" class="fa fa-bars"></i>-->
+                    <!--Click the icons for more details:-->
+                    <!--</button>-->
 
                     <!--<button class="" style="margin-top: 5px;background: transparent;border-radius: 5%" type="button"-->
                     <!--onclick="toggleInfo()">-->
@@ -404,7 +789,7 @@
                     <li>
                         <div class="timeline-image" onclick="toggleInfo()">
                             <a href="https://www.autoqe.com/">
-                                <img class="img-circle img-responsive" src="img/brands/autoqe.svg" alt="autoqe">
+                                <img class="img-circle img-responsive" src="img/brands/autoqe_circ.svg" alt="autoqe">
                             </a>
                         </div>
                         <div>
@@ -413,11 +798,11 @@
                             <div class="timeline-heading">
                                 <a href="https://www.autoqe.com/">
                                     <h2 class="subheading">
-                                        <img src="img/icons/startup.png" class="img-rounded" height="32">
+                                        <img src="img/icons/rocket-icon.svg" class="img-rounded" height="32">
                                         Autoqe</h2>
                                     <h4>Auto al Toque</h4>
                                 </a>
-                                <p>Founder, CTO and Sales Manager</p>
+                                <p>Founder</p>
                                 <h5 class="date">
                                     <!--<img src="img/country/chile.png" class="img-rounded" height="32">-->
                                     <img src="img/country/arg.png" class="img-rounded" height="32">
@@ -443,7 +828,7 @@
                             <div class="timeline-heading">
                                 <h2 class="subheading" href="https://www.shotgot.com/">
                                     ShotGot
-                                    <img src="img/icons/startup.png" class="img-rounded" height="32">
+                                    <img src="img/icons/rocket-icon.svg" class="img-rounded" height="32">
                                 </h2>
                                 <h4> See it, Got it!</h4>
                                 <p> Founder</p>
@@ -471,7 +856,8 @@
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h2 class="subheading">
-                                    <img src="img/icons/suitcase.png" class="img-rounded" height="32">
+                                    <span style="color: #122b40" class="glyphicon glyphicon-briefcase"></span>
+                                    <!--<img src="img/icons/suitcase.png" class="img-rounded" height="32">-->
                                     Amadeus</h2>
                                 <h4 class="subheading"> Java Developer</h4>
                                 <h5 class="date">
@@ -496,7 +882,8 @@
                             <div class="timeline-heading">
                                 <h2 class="subheading">
                                     Seat
-                                    <img src="img/icons/suitcase.png" class="img-rounded" height="32">
+                                    <span style="color: #122b40" class="glyphicon glyphicon-briefcase"></span>
+                                    <!--<img src="img/icons/suitcase.png" class="img-rounded" height="32">-->
                                 </h2>
                                 <h4 class="subheading">Android Developer</h4>
                                 <h5 class="date">
@@ -547,8 +934,9 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h2 class="subheading"> HackEPFL 2015
+                                <h2 class="subheading">
                                     <img src="img/icons/second.png" class="img-rounded" height="32">
+                                    HackEPFL 2015
                                 </h2>
                                 <h4 class="subheading"> Facebook Hackathon at EPFL</h4>
                                 <h5 class="date">
@@ -572,11 +960,12 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-
-                                <!--<h3 class="subheading"> <br>Exchange project - EPFL</h3>-->
-                                <h2><img src="img/icons/study-black.png" class="img-rounded" height="32">
-                                    Exchange project at EPFL</h2>
-                                <h4>Collaborative sensing on selfdriving cars</h4>
+                                <h2>
+                                    <span style="color: #122b40" class="glyphicon glyphicon-education"></span>
+                                    <!--<img src="img/icons/study-black.png" class="img-rounded" height="32">-->
+                                    EPFL</h2>
+                                <h4>Exchange project</h4>
+                                <h5>Collaborative sensing on selfdriving cars</h5>
                                 <h5 class="date"><img src="img/country/ch.png" class="img-rounded" height="32">
                                     Lausanne, Feb-Jun '15</h5>
                             </div>
@@ -597,8 +986,9 @@
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h2 class="subheading"> ThinkBig 2014
+                                <h2 class="subheading">
                                     <img src="img/icons/second.png" class="img-rounded" height="32">
+                                    ThinkBig 2014
                                 </h2>
                                 <h4 class="subheading"> Telefonica Smartcity Hackathon</h4>
                                 <h5 class="date">
@@ -624,8 +1014,8 @@
                             <div class="timeline-heading">
                                 <h2 class="subheading">
                                     <img src="img/icons/second.png" class="img-rounded" height="32">
-                                    Nanosatellite CUBESAT</h2>
-                                <h4 class="subheading"> GOOGLE award</h4>
+                                    Nano Satellite </h2>
+                                <h4 class="subheading">CUBESAT - GOOGLE award</h4>
                                 <h5 class="date">
                                     <img src="img/country/eu-round.png" class="img-rounded" height="32">
                                     Bcn, Feb-Jun 2013</h5>
@@ -659,8 +1049,8 @@
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h2 class="subheading">
-                                    <img src="img/icons/study-black.png" class="img-rounded" height="32">
-                                    Telecommunication Eng.
+                                    <span style="color: #122b40" class="glyphicon glyphicon-education"></span>
+                                    Telecomm. Eng.
                                 </h2>
                                 <h4 class="subheading">B.Sc. at UPC - Branch in Telematics</h4>
 
@@ -714,7 +1104,7 @@
                             <div class="timeline-heading">
                                 <h2 class="subheading">
                                     Born
-                                    <img src="img/icons/startup.png" class="img-rounded" height="32">
+                                    <img src="img/icons/rocket-icon.svg" class="img-rounded" height="32">
                                 </h2>
                                 <h5 class="date">
                                     <img src="img/country/sp.png" class="img-rounded" height="32">
@@ -979,240 +1369,240 @@
 <!-- Use the modals below to showcase details about your portfolio projects! -->
 
 <!-- Portfolio Modal 1 Shotgot -->
-<div class="portfolio-modal modal fade" id="portfolioShotGot" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <img src="img/icons/startup.png" class="img-rounded" height="32px" style="float: left"
-                                 alt="">
-                            <h2>
-                                <img src="img/brands/shotgot.png" class="img-rounded" height="80px" alt=""
-                                     style="vertical-align: middle">
-                                ShotGot</h2>
-                            <h3>See it, Got it</h3>
-                            <p class="item-intro text-muted">Get anything around you with one click!</p>
-                            <img class="img-responsive-caption img-centered" src="img/about/imgRecog3.jpg" alt="">
-                            <p>Visual search engine able to match a picture with an item within a catalog providing a
-                                powerful, scalable purchase comparator platform!</p>
-                            <img class="img-responsive-caption img-centered" src="img/about/imgRecog2.jpg" alt="">
-                            <p>
-                                <strong>It will be soon a preview available, as well as to download on GooglePlay and
-                                    AppStore:</strong>
-                            </p>
-                            <ul class="list-inline">
-                                <img src="img/logos/google-play-badge.svg" height="80px" width="260px" alt="">
-                                <img src="img/logos/app-store-badge.svg" height="80px" width="260px" alt="">
-                            </ul>
-                            <img class="img-responsive-caption img-centered" src="img/about/imgRecog4.jpg" alt="">
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i> Close Project
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--<div class="portfolio-modal modal fade" id="portfolioShotGot" tabindex="-1" role="dialog" aria-hidden="true">-->
+<!--<div class="modal-dialog">-->
+<!--<div class="modal-content">-->
+<!--<div class="close-modal" data-dismiss="modal">-->
+<!--<div class="lr">-->
+<!--<div class="rl">-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-lg-8 col-lg-offset-2">-->
+<!--<div class="modal-body">-->
+<!--&lt;!&ndash; Project Details Go Here &ndash;&gt;-->
+<!--<img src="img/icons/startup.png" class="img-rounded" height="32px" style="float: left"-->
+<!--alt="">-->
+<!--<h2>-->
+<!--<img src="img/brands/shotgot.png" class="img-rounded" height="80px" alt=""-->
+<!--style="vertical-align: middle">-->
+<!--ShotGot</h2>-->
+<!--<h3>See it, Got it</h3>-->
+<!--<p class="item-intro text-muted">Get anything around you with one click!</p>-->
+<!--<img class="img-responsive-caption img-centered" src="img/about/imgRecog3.jpg" alt="">-->
+<!--<p>Visual search engine able to match a picture with an item within a catalog providing a-->
+<!--powerful, scalable purchase comparator platform!</p>-->
+<!--<img class="img-responsive-caption img-centered" src="img/about/imgRecog2.jpg" alt="">-->
+<!--<p>-->
+<!--<strong>It will be soon a preview available, as well as to download on GooglePlay and-->
+<!--AppStore:</strong>-->
+<!--</p>-->
+<!--<ul class="list-inline">-->
+<!--<img src="img/logos/google-play-badge.svg" height="80px" width="260px" alt="">-->
+<!--<img src="img/logos/app-store-badge.svg" height="80px" width="260px" alt="">-->
+<!--</ul>-->
+<!--<img class="img-responsive-caption img-centered" src="img/about/imgRecog4.jpg" alt="">-->
+<!--<button type="button" class="btn btn-primary" data-dismiss="modal"><i-->
+<!--class="fa fa-times"></i> Close Project-->
+<!--</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 
-<!-- Portfolio Autoqe -->
-<div class="portfolio-modal modal fade" id="portfolioAutoqe" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <a href="https://www.autoqe.com/">
-                                <img src="img/icons/startup.png" class="img-rounded" height="32px" style="float: right"
-                                     alt="">
-                                <h2>
-                                    <img src="img/brands/autoqe.svg" class="img-rounded" height="50px" alt=""
-                                         style="vertical-align: text-top">
-                                    Autoqe</h2></a>
-                            <h3>Auto al Toque</h3>
-                            <p class="text-muted">
-                                All-in-one transport application in the context of Collaborative Economy,
-                                <br>including <b>Carpooling</b>, <b>Carsharing</b>, and private <b>car or parking
-                                rental</b>.
-                            </p>
-                            <img class="img-responsive-caption img-centered" src="img/portfolio/autoqe_port2.png"
-                                 alt="">
-                            <p>Sooner expansion to Latin America!</p>
-                            <img class="img-responsive-caption img-centered" src="img/portfolio/autoqe_port.png" alt="">
+<!--&lt;!&ndash; Portfolio Autoqe &ndash;&gt;-->
+<!--<div class="portfolio-modal modal fade" id="portfolioAutoqe" tabindex="-1" role="dialog" aria-hidden="true">-->
+<!--<div class="modal-dialog">-->
+<!--<div class="modal-content">-->
+<!--<div class="close-modal" data-dismiss="modal">-->
+<!--<div class="lr">-->
+<!--<div class="rl">-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-lg-8 col-lg-offset-2">-->
+<!--<div class="modal-body">-->
+<!--<a href="https://www.autoqe.com/">-->
+<!--<img src="img/icons/startup.png" class="img-rounded" height="32px" style="float: right"-->
+<!--alt="">-->
+<!--<h2>-->
+<!--<img src="img/brands/autoqe.svg" class="img-rounded" height="50px" alt=""-->
+<!--style="vertical-align: text-top">-->
+<!--Autoqe</h2></a>-->
+<!--<h3>Auto al Toque</h3>-->
+<!--<p class="text-muted">-->
+<!--All-in-one transport application in the context of Collaborative Economy,-->
+<!--<br>including <b>Carpooling</b>, <b>Carsharing</b>, and private <b>car or parking-->
+<!--rental</b>.-->
+<!--</p>-->
+<!--<img class="img-responsive-caption img-centered" src="img/portfolio/autoqe_port2.png"-->
+<!--alt="">-->
+<!--<p>Sooner expansion to Latin America!</p>-->
+<!--<img class="img-responsive-caption img-centered" src="img/portfolio/autoqe_port.png" alt="">-->
 
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i> Close Project
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--<button type="button" class="btn btn-primary" data-dismiss="modal"><i-->
+<!--class="fa fa-times"></i> Close Project-->
+<!--</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 
-<!-- Portfolio Modal 3 -->
-<div class="portfolio-modal modal fade" id="portfolioMatchyang" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-                            <p>Treehouse is a free PSD web template built by <a
-                                    href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and
-                                spacious design perfect for people or startup companies looking to showcase their apps
-                                or other projects.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a
-                                    href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.
-                            </p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i> Close Project
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--&lt;!&ndash; Portfolio Modal 3 &ndash;&gt;-->
+<!--<div class="portfolio-modal modal fade" id="portfolioMatchyang" tabindex="-1" role="dialog" aria-hidden="true">-->
+<!--<div class="modal-dialog">-->
+<!--<div class="modal-content">-->
+<!--<div class="close-modal" data-dismiss="modal">-->
+<!--<div class="lr">-->
+<!--<div class="rl">-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-lg-8 col-lg-offset-2">-->
+<!--<div class="modal-body">-->
+<!--&lt;!&ndash; Project Details Go Here &ndash;&gt;-->
+<!--<h2>Project Name</h2>-->
+<!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
+<!--<img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">-->
+<!--<p>Treehouse is a free PSD web template built by <a-->
+<!--href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and-->
+<!--spacious design perfect for people or startup companies looking to showcase their apps-->
+<!--or other projects.</p>-->
+<!--<p>You can download the PSD template in this portfolio sample item at <a-->
+<!--href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.-->
+<!--</p>-->
+<!--<button type="button" class="btn btn-primary" data-dismiss="modal"><i-->
+<!--class="fa fa-times"></i> Close Project-->
+<!--</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 
-<!-- Portfolio Modal 4 -->
-<div class="portfolio-modal modal fade" id="portfolioMindstorm" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
-                            <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by
-                                <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and
-                                clean one page web template that was made exclusively for Best PSD Freebies. This
-                                template has a great portfolio, timeline, and meet your team sections that can be easily
-                                modified to fit your needs.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a
-                                    href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.
-                            </p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i> Close Project
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--&lt;!&ndash; Portfolio Modal 4 &ndash;&gt;-->
+<!--<div class="portfolio-modal modal fade" id="portfolioMindstorm" tabindex="-1" role="dialog" aria-hidden="true">-->
+<!--<div class="modal-dialog">-->
+<!--<div class="modal-content">-->
+<!--<div class="close-modal" data-dismiss="modal">-->
+<!--<div class="lr">-->
+<!--<div class="rl">-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-lg-8 col-lg-offset-2">-->
+<!--<div class="modal-body">-->
+<!--&lt;!&ndash; Project Details Go Here &ndash;&gt;-->
+<!--<h2>Project Name</h2>-->
+<!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
+<!--<img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">-->
+<!--<p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by-->
+<!--<a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and-->
+<!--clean one page web template that was made exclusively for Best PSD Freebies. This-->
+<!--template has a great portfolio, timeline, and meet your team sections that can be easily-->
+<!--modified to fit your needs.</p>-->
+<!--<p>You can download the PSD template in this portfolio sample item at <a-->
+<!--href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.-->
+<!--</p>-->
+<!--<button type="button" class="btn btn-primary" data-dismiss="modal"><i-->
+<!--class="fa fa-times"></i> Close Project-->
+<!--</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 
-<!-- Portfolio Modal 5 -->
-<div class="portfolio-modal modal fade" id="portfolioEWSN" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
-                            <p>Escape is a free PSD web template built by <a
-                                    href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page
-                                web template that was designed with agencies in mind. This template is ideal for those
-                                looking for a simple one page solution to describe your business and offer your
-                                services.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a
-                                    href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.
-                            </p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i> Close Project
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--&lt;!&ndash; Portfolio Modal 5 &ndash;&gt;-->
+<!--<div class="portfolio-modal modal fade" id="portfolioEWSN" tabindex="-1" role="dialog" aria-hidden="true">-->
+<!--<div class="modal-dialog">-->
+<!--<div class="modal-content">-->
+<!--<div class="close-modal" data-dismiss="modal">-->
+<!--<div class="lr">-->
+<!--<div class="rl">-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-lg-8 col-lg-offset-2">-->
+<!--<div class="modal-body">-->
+<!--&lt;!&ndash; Project Details Go Here &ndash;&gt;-->
+<!--<h2>Project Name</h2>-->
+<!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
+<!--<img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">-->
+<!--<p>Escape is a free PSD web template built by <a-->
+<!--href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page-->
+<!--web template that was designed with agencies in mind. This template is ideal for those-->
+<!--looking for a simple one page solution to describe your business and offer your-->
+<!--services.</p>-->
+<!--<p>You can download the PSD template in this portfolio sample item at <a-->
+<!--href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.-->
+<!--</p>-->
+<!--<button type="button" class="btn btn-primary" data-dismiss="modal"><i-->
+<!--class="fa fa-times"></i> Close Project-->
+<!--</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 
-<!-- Portfolio Modal 6 -->
-<div class="portfolio-modal modal fade" id="portfolioThirdEye" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
-                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                            <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
-                            <p>Dreams is a free PSD web template built by <a
-                                    href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern
-                                one page web template designed for almost any purpose. It’s a beautiful template that’s
-                                designed with the Bootstrap framework in mind.</p>
-                            <p>You can download the PSD template in this portfolio sample item at <a
-                                    href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.
-                            </p>
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i
-                                    class="fa fa-times"></i> Close Project
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--&lt;!&ndash; Portfolio Modal 6 &ndash;&gt;-->
+<!--<div class="portfolio-modal modal fade" id="portfolioThirdEye" tabindex="-1" role="dialog" aria-hidden="true">-->
+<!--<div class="modal-dialog">-->
+<!--<div class="modal-content">-->
+<!--<div class="close-modal" data-dismiss="modal">-->
+<!--<div class="lr">-->
+<!--<div class="rl">-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-lg-8 col-lg-offset-2">-->
+<!--<div class="modal-body">-->
+<!--&lt;!&ndash; Project Details Go Here &ndash;&gt;-->
+<!--<h2>Project Name</h2>-->
+<!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
+<!--<img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">-->
+<!--<p>Dreams is a free PSD web template built by <a-->
+<!--href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern-->
+<!--one page web template designed for almost any purpose. It’s a beautiful template that’s-->
+<!--designed with the Bootstrap framework in mind.</p>-->
+<!--<p>You can download the PSD template in this portfolio sample item at <a-->
+<!--href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.-->
+<!--</p>-->
+<!--<button type="button" class="btn btn-primary" data-dismiss="modal"><i-->
+<!--class="fa fa-times"></i> Close Project-->
+<!--</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 
 <!-- jQuery -->
 <!--<script src="vendor/jquery/jquery.min.js"></script>-->
