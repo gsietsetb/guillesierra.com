@@ -319,7 +319,7 @@ header {
 
 @media (min-width:968px) {
     header {
-        min-height: 40vh;
+        min-height: 50vh;
         /*height: 100%;*/
         background-repeat: no-repeat;
         background-position: center;
