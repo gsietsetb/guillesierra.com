@@ -299,7 +299,7 @@ fieldset[disabled] .btn-xl:hover {
 header {
     /*height: auto!important;*/
     /*position: relative;*/
-    min-height: 60vh;
+    min-height: 50vh;
     /*min-width:100%;*/
     /*background-size: 100%;*/
     /*-webkit-background-size: cover;*/
@@ -312,20 +312,34 @@ header {
     background-image: url(../img/background/gsierra_header.png);
     background-color: transparent;
     background-attachment: fixed;
-    background-size: auto;
+    background-size: contain;
     /*background-attachment: fixed;*/
     color: #fff
 }
 
 
-@media (min-width:968px) {
+@media (max-width:968px) {
     header {
-        /*min-height: 30vh;*/
+        min-height: 30vh;
+        background-image: url(../img/background/gsierra_header_keyboard.png);
         /*height: 100%;*/
         /*background-repeat: no-repeat;*/
-        /*background-position: top;*/
+        background-position: top;
         /*background-color: transparent;*/
-        /*background-size: contain;*/
+        background-size: contain;
+        /*background-attachment: fixed;*/
+        color: #fff
+    }
+
+}
+@media (max-width:648px) {
+    header {
+        min-height: 20vh;
+        /*height: 100%;*/
+        /*background-repeat: no-repeat;*/
+        background-position: top;
+        /*background-color: transparent;*/
+        background-size: contain;
         /*background-attachment: fixed;*/
         color: #fff
     }
