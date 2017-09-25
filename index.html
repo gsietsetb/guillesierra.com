@@ -194,8 +194,12 @@
                 class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
     </li>
     </ul>-->
-    </div>
+    <!--</div>-->
 </header>
+
+<!--<div class="mockup-bg">-->
+
+<!--</div>-->
 
 <!-- Portfolio Grid Section -->
 <section id="portfolio" class="bg-light-gray">
@@ -211,7 +215,28 @@
     </div>
     <div class="row">
 
-        <!--Autoqe-->
+        <!--Velocity-->
+        <div class="col-md-4 col-sm-6 portfolio-item" id="Velocity">
+            <a href="#portfolioAutoqe" class="portfolio-link" data-toggle="modal">
+                <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                        <i class="fa fa-plus fa-3x"></i>
+                    </div>
+                </div>
+                <img src="img/brands/velocity.jpg" class="img-responsive-caption" height="auto" alt="">
+            </a>
+            <div class="portfolio-caption">
+                <a href="https://www.velocityapp.com/">
+                    <img src="img/brands/velocity_logo.jpg" class="img-rounded" height="50px" style="float: left"
+                         alt="">
+                    <img src="img/icons/rocket-icon.svg" class="img-rounded" height="32px" style="float: right" alt="">
+                    <h4>Velocity Black</h4></a>
+                <h5>Curate the life's best</h5>
+                <p class="text-muted">Android & Frontend Developer</p>
+            </div>
+        </div>
+
+<!--Autoqe-->
         <div class="col-md-4 col-sm-6 portfolio-item" id="Autoqe">
             <a href="#portfolioAutoqe" class="portfolio-link" data-toggle="modal">
                 <div class="portfolio-hover">
@@ -270,24 +295,24 @@
             </div>
         </div>
 
-        <!--Mindstormer-->
-        <div class="col-md-4 col-sm-6 portfolio-item">
-            <a href="#portfolioMindstorm" class="portfolio-link" data-toggle="modal">
-                <div class="portfolio-hover">
-                    <div class="portfolio-hover-content">
-                        <i class="fa fa-plus fa-3x"></i>
-                    </div>
-                </div>
-                <img src="img/portfolio/brainstorm2.jpg" class="img-responsive-caption" alt="">
-            </a>
-            <div class="portfolio-caption">
-                <img src="img/portfolio/brainstorm.png" class="img-rounded" height="50px" style="float: left"
-                     alt="">
-                <h4>MindStorm</h4>
-                <h5>Name Brainstorm</h5>
-                <p class="text-muted">Startup name suggestions</p>
-            </div>
-        </div>
+        <!--&lt;!&ndash;Mindstormer&ndash;&gt;-->
+        <!--<div class="col-md-4 col-sm-6 portfolio-item">-->
+            <!--<a href="#portfolioMindstorm" class="portfolio-link" data-toggle="modal">-->
+                <!--<div class="portfolio-hover">-->
+                    <!--<div class="portfolio-hover-content">-->
+                        <!--<i class="fa fa-plus fa-3x"></i>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<img src="img/portfolio/brainstorm2.jpg" class="img-responsive-caption" alt="">-->
+            <!--</a>-->
+            <!--<div class="portfolio-caption">-->
+                <!--<img src="img/portfolio/brainstorm.png" class="img-rounded" height="50px" style="float: left"-->
+                     <!--alt="">-->
+                <!--<h4>MindStorm</h4>-->
+                <!--<h5>Name Brainstorm</h5>-->
+                <!--<p class="text-muted">Startup name suggestions</p>-->
+            <!--</div>-->
+        <!--</div>-->
 
         <!--EWSN-->
         <div class="col-md-4 col-sm-6 portfolio-item" id="EWSN">
@@ -348,6 +373,7 @@
             // Styles a map in night mode.
             var Barcelona = {lat: 41.3851, lng: 2.1734},
                 center = {lat: 9.6037, lng: -22.3816},
+                London = {lat: 51.5552653, lng: -0.6855491},
                 BuenosAires = {lat: -34.6037, lng: -58.3816},
                 Lausanne = {lat: 46.5197, lng: 6.6323},
                 Nice = {lat: 43.7102, lng: 7.2620},
@@ -612,6 +638,11 @@
                 scaledSize: new google.maps.Size(80, 80), // scaled size
                 origin: new google.maps.Point(0, 0), // origin
                 anchor: new google.maps.Point(-60, 60) // anchor
+            };var iconVelocity = {
+                url: "https://www.guillesierra.com/img/brands/velocity_logo.png", // url
+                scaledSize: new google.maps.Size(20, 20), // scaled size
+                origin: new google.maps.Point(0, 0), // origin
+                anchor: new google.maps.Point(-60, 60) // anchor
             };var iconAutoqe = {
                 url: "https://www.guillesierra.com/img/brands/autoqe_circ.svg", // url
                 scaledSize: new google.maps.Size(80, 80), // scaled size
@@ -652,6 +683,11 @@
             new google.maps.Marker({
                 position: SanFrancisco,
                 icon: iconShotgot,
+                map: map
+            });
+            new google.maps.Marker({
+                position: London,
+                icon: iconVelocity,
                 map: map
             });
             new google.maps.Marker({
@@ -737,7 +773,38 @@
         <div class="row">
             <div class="col-lg-12">
                 <ul class="timeline">
-                    <li>
+
+                    <!--Velocity-->
+                    <li >
+                        <div class="timeline-image" onclick="toggleInfo()">
+                            <a href="https://www.velocityapp.com/">
+                                <img class="img-circle img-responsive" src="img/brands/velocity_logo.jpg" alt="">
+                            </a>
+                        </div>
+                        <div>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <a href="https://www.velocityapp.com/">
+                                    <h2 class="subheading">
+                                        <span style="color: #122b40" class="glyphicon glyphicon-briefcase"></span>
+                                        Velocity Black
+                                        <img src="img/icons/rocket-icon.svg" class="img-rounded" height="32">
+                                    </h2>
+                                    <h4>Android & Frontend Developer</h4>
+                                </a>
+                                <!--<p>Designer and publisher</p>-->
+                                <h5 class="date">
+                                    <!--TODO add UK flag-->
+                                    <img src="img/country/uk.svg" class="img-rounded" height="32">
+                                    Bcn & London, Sept '17</h5>
+                            </div>
+                            <hr>
+                        </div>
+                    </li>
+
+                    <!--Guillesierra-->
+                    <li class="timeline-inverted">
                         <div class="timeline-image" onclick="toggleInfo()">
                             <a href="https://www.guillesierra.com/">
                                 <img class="img-circle img-responsive" src="img/logos/gsierra_w.svg" alt="">
@@ -762,7 +829,7 @@
                     </li>
 
                     <!-- Ganomad -->
-                    <li class="timeline-inverted">
+                    <li >
                         <div class="timeline-image" onclick="toggleInfo()">
                             <img class="img-circle img-responsive" src="img/brands/ganomad.png" alt="">
                         </div>
@@ -786,7 +853,7 @@
                     </li>
 
                     <!-- Autoqe -->
-                    <li>
+                    <li class="timeline-inverted">
                         <div class="timeline-image" onclick="toggleInfo()">
                             <a href="https://www.autoqe.com/">
                                 <img class="img-circle img-responsive" src="img/brands/autoqe_circ.svg" alt="autoqe">
@@ -820,7 +887,7 @@
                     </li>
 
                     <!-- ShotGot -->
-                    <li class="timeline-inverted">
+                    <li>
                         <div class="timeline-image" onclick="toggleInfo()">
                             <img class="img-circle img-responsive" src="img/brands/shotgot.png" alt="shotgot">
                         </div>
@@ -849,7 +916,7 @@
                     </li>
 
                     <!-- Amadeus -->
-                    <li id="Amadeus">
+                    <li class="timeline-inverted" id="Amadeus">
                         <div class="timeline-image" onclick="toggleInfo()">
                             <img class="img-circle img-responsive" src="img/brands/amadeus.png" alt="">
                         </div>
@@ -874,7 +941,7 @@
                     </li>
 
                     <!-- SEAT -->
-                    <li class="timeline-inverted" id="SEAT">
+                    <li id="SEAT">
                         <div class="timeline-image" onclick="toggleInfo()">
                             <img class="img-circle img-responsive" src="img/brands/seat.png" alt="">
                         </div>
@@ -904,7 +971,7 @@
                     </li>
 
                     <!-- EWSN -->
-                    <li>
+                    <li class="timeline-inverted">
                         <div class="timeline-image" onclick="toggleInfo()">
                             <img class="img-circle img-responsive" src="img/brands/tu-graz.png" alt="">
                         </div>
@@ -928,7 +995,7 @@
                     </li>
 
                     <!-- HACKEPFL -->
-                    <li class="timeline-inverted" id="hackepfl">
+                    <li id="hackepfl">
                         <div class="timeline-image" onclick="toggleInfo()">
                             <img class="img-circle img-responsive" src="img/brands/facebook.png" alt="">
                         </div>
@@ -954,7 +1021,7 @@
                     </li>
 
                     <!-- EPFL -->
-                    <li id="EPFL">
+                    <li class="timeline-inverted" id="EPFL">
                         <div class="timeline-image" onclick="toggleInfo()">
                             <img class="img-circle img-responsive" src="img/brands/epfl4.png" alt="">
                         </div>
@@ -980,7 +1047,7 @@
                     </li>
 
                     <!-- Thinkbig -->
-                    <li class="timeline-inverted" id="Thinkbig">
+                    <li id="Thinkbig">
                         <div class="timeline-image" onclick="toggleInfo()">
                             <img class="img-circle img-responsive" src="img/brands/telefonica.png" alt="">
                         </div>
@@ -1006,7 +1073,7 @@
                     </li>
 
                     <!-- CubeSat -->
-                    <li id="Cubesat">
+                    <li class="timeline-inverted" id="Cubesat">
                         <div class="timeline-image" onclick="toggleInfo()">
                             <img class="img-circle img-responsive" src="img/brands/google.png" alt="">
                         </div>
@@ -1042,7 +1109,7 @@
                     </li>
 
                     <!-- UPC -->
-                    <li class="timeline-inverted" id="UPC">
+                    <li id="UPC">
                         <div class="timeline-image" onclick="toggleInfo()">
                             <img class="img-circle img-responsive" src="img/brands/upc-logo.png" alt="">
                         </div>
@@ -1070,7 +1137,7 @@
                     </li>
 
                     <!-- SUMO -->
-                    <li id="Sumo">
+                    <li class="timeline-inverted" id="Sumo">
                         <div class="timeline-image" onclick="toggleInfo()">
                             <img class="img-circle img-responsive" src="img/about/robo-sumo.jpg" alt="">
                         </div>
@@ -1096,7 +1163,7 @@
                     </li>
 
                     <!-- Born -->
-                    <li class="timeline-inverted" id="born">
+                    <li id="born">
                         <div class="timeline-image" onclick="toggleInfo()">
                             <img class="img-circle img-responsive" src="img/icons/stork.png" alt="">
                         </div>
