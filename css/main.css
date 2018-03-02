@@ -17,7 +17,7 @@ body {
     padding-top: 80px;
     overflow-x: hidden;
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    webkit-tap-highlight-color: #122b40
+    webkit-tap-highlight-color: #74acdf
 }
 
 .btn-primary,
@@ -301,31 +301,28 @@ header {
     /*position: relative;*/
     min-height: 50vh;
     /*min-width:100%;*/
-    /*background-size: 100%;*/
-    /*-webkit-background-size: cover;*/
-    /*-moz-background-size: cover;*/
-    /*-o-background-size: cover;*/
-    /*-o-background-attachment: fixed;:*/
     text-align: center;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-image: url(../img/background/gsierra_header.png);
-    background-color: transparent;
-    background-attachment: fixed;
+    background: transparent url(../img/background/gsierra.png) no-repeat fixed top;
     background-size: contain;
     /*background-attachment: fixed;*/
     color: #fff
 }
 
 
+
+
+/*@media (min-width:968px) {*/
+    /*header {*/
+        /*background: transparent url(../img/background/gsierra.png) no-repeat fixed top;*/
+    /*}*/
+/*}*/
 @media (max-width:968px) {
     header {
+
         min-height: 30vh;
-        background-image: url(../img/background/gsierra_header_keyboard.png);
         /*height: 100%;*/
         /*background-repeat: no-repeat;*/
         background-position: top;
-        /*background-color: transparent;*/
         background-size: contain;
         /*background-attachment: fixed;*/
         color: #fff
@@ -343,7 +340,6 @@ header {
         /*background-attachment: fixed;*/
         color: #fff
     }
-
 }
 
 header .intro-text {
@@ -956,12 +952,12 @@ ul.social-buttons li a:hover {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #122b40
+    background: #74acdf;
 }
 
 ::selection {
     text-shadow: none;
-    background: #122b40
+    background: #74acdf;
 }
 
 img::selection {
