@@ -302,8 +302,8 @@ header {
     min-height: 50vh;
     /*min-width:100%;*/
     text-align: center;
-    background: transparent url(../img/background/gsierra.png) no-repeat fixed top;
-    background-size: contain;
+    background: transparent url(../img/background/gsierra.png) no-repeat center;
+    background-size: cover;
     /*background-attachment: fixed;*/
     color: #fff
 }
@@ -319,7 +319,7 @@ header {
 @media (max-width:968px) {
     header {
 
-        min-height: 30vh;
+        /*min-height: 40vh;*/
         /*height: 100%;*/
         /*background-repeat: no-repeat;*/
         background-position: top;
@@ -331,12 +331,13 @@ header {
 }
 @media (max-width:648px) {
     header {
-        min-height: 20vh;
+        background: transparent url(../img/background/gsierra_header.jpg) no-repeat top;
+        min-height: 30vh;
         /*height: 100%;*/
         /*background-repeat: no-repeat;*/
         background-position: top;
         /*background-color: transparent;*/
-        background-size: contain;
+        background-size: cover;
         /*background-attachment: fixed;*/
         color: #fff
     }
