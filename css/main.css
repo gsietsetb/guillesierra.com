@@ -35,6 +35,7 @@ h6 {
 
 .text-muted {
     color: #122b40;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .text-muted-light {
@@ -54,6 +55,7 @@ p {
 p.large {
     font-size: 16px
 }
+
 
 a,
 a.active,
@@ -299,10 +301,10 @@ fieldset[disabled] .btn-xl:hover {
 header {
     /*height: auto!important;*/
     /*position: relative;*/
-    min-height: 50vh;
+    min-height: 40vh;
     /*min-width:100%;*/
     text-align: center;
-    background: transparent url(../img/background/gsierra.png) no-repeat center;
+    background: transparent url(../img/background/gsierra_dev.png) no-repeat center;
     background-size: cover;
     /*background-attachment: fixed;*/
     color: #fff
@@ -318,12 +320,11 @@ header {
 /*}*/
 @media (max-width:968px) {
     header {
-
-        /*min-height: 40vh;*/
+        min-height: 30vh;
         /*height: 100%;*/
         /*background-repeat: no-repeat;*/
         background-position: top;
-        background-size: contain;
+        background-size: cover;
         /*background-attachment: fixed;*/
         color: #fff
     }
@@ -331,7 +332,7 @@ header {
 }
 @media (max-width:648px) {
     header {
-        background: transparent url(../img/background/gsierra_header.jpg) no-repeat top;
+        background: transparent url(../img/background/gsierra_dev.png) no-repeat right;
         min-height: 30vh;
         /*height: 100%;*/
         /*background-repeat: no-repeat;*/
@@ -402,7 +403,7 @@ section h2.section-heading {
     font-size: 30px;
     margin-top: 0;
     margin-bottom: 15px;
-    color: #2e6da4;
+    color: #122b40;
 }
 
 section h3.section-subheading {
@@ -516,7 +517,7 @@ footer ul.quicklinks {
     position: absolute;
     content: "";
     width: 1px;
-    border: 1px ridge #2e6da4;
+    border: 1px ridge rgba(20, 35, 41, 0.28);
     left: 40px;
     margin-left: -1.5px
 }
@@ -569,7 +570,7 @@ footer ul.quicklinks {
     background-color: #ffffff;
     color: #fff;
     border-radius: 100%;
-    border: 2px dashed #2e6da4;
+    border: 2px dashed rgba(20, 35, 41, 0.28);
     text-align: center
 }
 
@@ -619,17 +620,17 @@ footer ul.quicklinks {
 
 .timeline .timeline-heading h4 {
     margin-top: 0;
-    color: inherit
+    color: #2e6da4;
 }
 
 .timeline .timeline-heading h2 {
     margin-top: 0;
-    color: #2e6da4
+    color: #122b40;
 }
 
 .timeline .timeline-heading h4.subheading {
     text-transform: none;
-    color: #122b40;
+    color: #2e6da4;
 }
 
 .timeline .timeline-heading h5.date {
@@ -1015,6 +1016,21 @@ img.mainPic {
         display: inline;
     }
 
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /*@media screen and (min-width: 800px) {*/
