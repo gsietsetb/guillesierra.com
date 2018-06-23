@@ -263,7 +263,7 @@ fieldset[disabled] .btn-xl:hover {
 }
 
 .page-scroll{
-    color: #2e6da4;
+    color: #122b40;
     font-size: smaller;
 }
 
@@ -485,9 +485,15 @@ section h3.section-subheading {
     margin: 0
 }
 
+#portfolio .portfolio-item .portfolio-caption h5 {
+    color: #2e6da4;
+}
+
 #portfolio .portfolio-item .portfolio-caption p {
     font-size: 16px;
-    margin: 0
+    text-align: center;
+    horiz-align: center;
+    left: 50%;
 }
 
 footer span.copyright,
