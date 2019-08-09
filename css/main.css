@@ -12,11 +12,11 @@
 .open .dropdown-toggle.btn-xl {
     background-image: none
 }
-
 body {
     padding-top: 80px;
     overflow-x: hidden;
-    font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
     webkit-tap-highlight-color: #74acdf
 }
 
@@ -28,14 +28,16 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+
     text-transform: uppercase;
     font-weight: 700
 }
 
 .text-muted {
     color: #122b40;
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .text-muted-light {
@@ -92,7 +94,9 @@ html, body {
 }
 
 .bg-darkest-gray {
-    background-color: #222
+    background-color: #222;
+    margin-top: 2em;
+    padding: 4em;
 }
 
 .bg-darkest-gray h4 {
@@ -189,6 +193,9 @@ fieldset[disabled] .btn-xl:hover {
 .navbar-gsierra {
     background-color: white;
     border-color: transparent
+    -webkit-box-shadow: 3px 6px 2px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
 .bg-light{
@@ -214,7 +221,9 @@ fieldset[disabled] .btn-xl:hover {
 
 .navbar-custom .nav li a,
 .navbar-custom .navbar-toggle {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+
     color: #fff;
     text-transform: uppercase
 }
@@ -351,7 +360,9 @@ header .intro-text {
 }
 
 header .intro-text .intro-lead-in {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+
     font-style: italic;
     font-size: 22px;
     line-height: 22px;
@@ -359,7 +370,9 @@ header .intro-text .intro-lead-in {
 }
 
 header .intro-text .intro-heading {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+
     text-transform: uppercase;
     font-weight: 700;
     font-size: 50px;
@@ -373,14 +386,18 @@ header .intro-text .intro-heading {
         padding-bottom: 100px
     }
     header .intro-text .intro-lead-in {
-        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: 'Montserrat', sans-serif;
+
+
         font-style: italic;
         font-size: 40px;
         line-height: 40px;
         margin-bottom: 25px
     }
     header .intro-text .intro-heading {
-        font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: 'Montserrat', sans-serif;
+
+
         text-transform: uppercase;
         font-weight: 700;
         font-size: 75px;
@@ -389,11 +406,24 @@ header .intro-text .intro-heading {
     }
 }
 
+
+.img-portfolio {
+    position: relative;
+    left: 0;
+    align-self: center;
+    justify-self: center;
+}
+
 #portfolio .portfolio-item .portfolio-caption p,
 section h3.section-subheading {
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*
+    font-family: "Georgia", Helvetica, Arial, sans-serif;
+    */
     /*font-style: italic;*/
     color: #122b40;
+    /*margin-left: 20px;*/
+    /*width: 120%;
+    align-self: flex-start;*/
 }
 
 section {
@@ -401,6 +431,7 @@ section {
 }
 
 section h2.section-heading {
+    font-family: "Geometos Rounded", Helvetica, Arial, sans-serif;
     font-size: 30px;
     margin-top: 0;
     margin-bottom: 15px;
@@ -408,6 +439,7 @@ section h2.section-heading {
 }
 
 section h3.section-subheading {
+    font-family: "Geometos Rounded", Helvetica, Arial, sans-serif;
     font-size: 16px;
     text-transform: none;
     font-weight: 400;
@@ -432,8 +464,11 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item .portfolio-link {
     display: block;
-    position: relative;
+    /* position: relative;*/
     max-width: 400px;
+    -webkit-box-shadow: 0px 6px 2px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.25);
     margin: 0 auto
 }
 
@@ -477,7 +512,10 @@ section h3.section-subheading {
     margin: 0 auto;
     background-color: #fff;
     text-align: center;
-    padding: 25px
+    padding: 25px;
+    -webkit-box-shadow: 3px 6px 2px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.25);
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
@@ -498,7 +536,7 @@ section h3.section-subheading {
 
 footer span.copyright,
 footer ul.quicklinks {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: Arial, sans-serif
 }
 
 #portfolio * {
@@ -523,8 +561,8 @@ footer ul.quicklinks {
     bottom: 0;
     position: absolute;
     content: "";
-    width: 1px;
-    border: 1px ridge rgba(20, 35, 41, 0.28);
+    width: 3px;
+    border: 2px solid rgba(20, 35, 41, 0.08);
     left: 40px;
     margin-left: -1.5px
 }
@@ -577,7 +615,10 @@ footer ul.quicklinks {
     background-color: #ffffff;
     color: #fff;
     border-radius: 100%;
-    border: 2px dashed rgba(20, 35, 41, 0.28);
+    /*border: 2px dashed rgba(20, 35, 41, 0.28);*/
+    -webkit-box-shadow: 3px 6px 2px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.25);
     text-align: center
 }
 
@@ -642,6 +683,7 @@ footer ul.quicklinks {
 
 .timeline .timeline-heading h5.date {
     font-weight: 100;
+    color: #2e6da4;
     text-transform: none;
     font-style: normal;
 }
@@ -663,11 +705,20 @@ footer ul.quicklinks {
         margin-bottom: 50px;
         min-height: 100px
     }
+
+    hr {
+        clear: both;
+        display: none
+    }
     .timeline>li .timeline-panel {
         width: 41%;
         float: left;
         padding: 0 20px 20px 30px;
-        text-align: right
+        text-align: right;
+        border-radius: 20px;
+        -webkit-box-shadow: 3px 6px 2px 0px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.25);
+        box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.25);
     }
     .timeline>li .timeline-image {
         width: 80px;
@@ -796,28 +847,36 @@ section#contact .form-control:focus {
 }
 
 section#contact::-webkit-input-placeholder {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+
     text-transform: uppercase;
     font-weight: 700;
     color: #eee
 }
 
 section#contact:-moz-placeholder {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+
     text-transform: uppercase;
     font-weight: 700;
     color: #eee
 }
 
 section#contact::-moz-placeholder {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+
     text-transform: uppercase;
     font-weight: 700;
     color: #eee
 }
 
 section#contact:-ms-input-placeholder {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+
     text-transform: uppercase;
     font-weight: 700;
     color: #eee
@@ -905,7 +964,7 @@ ul.social-buttons li a:hover {
 
 .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
-    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    ily: Arial, sans-serif;
     font-style: italic;
     font-size: 16px
 }
