@@ -19,7 +19,12 @@ body {
 
     webkit-tap-highlight-color: #74acdf
 }
-
+html, body {
+    overflow-x: hidden;
+}
+body {
+    position: relative
+}
 .btn-primary,
 .btn-xl,
 h1,
