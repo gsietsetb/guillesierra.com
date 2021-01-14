@@ -7945,7 +7945,7 @@ button.close {
 }
 
 @-ms-viewport {
-    width: device-width;
+    width: 100%;
 }
 
 .visible-xs,
