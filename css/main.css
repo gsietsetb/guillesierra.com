@@ -22,6 +22,9 @@ body {
 html, body {
     overflow-x: hidden;
 }
+.flex-container {
+    flex-direction: row;
+}
 body {
     position: relative
 }
@@ -468,7 +471,8 @@ section h3.section-subheading {
 }
 
 #portfolio .portfolio-item {
-    margin: 0 0 15px;
+    /*margin: 0 0 15px;*/
+    width: 33vw;
     right: 0
 }
 
